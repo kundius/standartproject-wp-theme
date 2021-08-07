@@ -1,0 +1,43 @@
+.wp-block-form-button-with-arrow {
+	display: flex;
+}
+
+.wp-block-form-button-with-arrow input:first-child {
+	font-size: 14px;
+	background: #32373c;
+	min-height: 44px;
+	padding: 0 16px;
+	color: #ffffff;
+	border-radius: 20px 0 0 20px;
+	width: 50%;
+	border: 2px solid #0073aa;
+	margin: 0;
+}
+
+.wp-block-form-button-with-arrow input:first-child::placeholder {
+	color: #ffffff;
+}
+
+.wp-block-form-button-with-arrow input:first-child:focus::placeholder {
+	color: transparent;
+}
+
+.wp-block-form-button-with-arrow input:last-child {
+	font-size: 14px;
+	background: #007cba;
+	min-height: 44px;
+	padding: 0 16px;
+	color: #ffffff;
+	border-radius: 0 20px 20px 0;
+	border: none;
+	width: 50%;
+	margin: 0;
+}
+
+.wp-block-form-button-with-arrow input:last-child::placeholder {
+	color: #ffffff;
+}
+
+.wp-block-form-button-with-arrow input:last-child:focus::placeholder {
+	color: transparent;
+}

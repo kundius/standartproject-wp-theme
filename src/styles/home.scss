@@ -1,0 +1,198 @@
+.section-services {
+  padding: 100px 0;
+  @include below(md) {
+    padding: 80px 0;
+  }
+}
+
+.section-services__title {
+  font-size: 38px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  @include below(md) {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+}
+
+.services-item {
+  position: relative;
+  &:hover .services-item__image {
+    opacity: 1;
+  }
+}
+
+.services-item__image {
+  opacity: 0.8;
+  transition: opacity .3s ease;
+  display: block;
+  margin-bottom: 60px;
+  margin-left: 30px;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.services-item__title {
+  margin: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.services-item__title a {
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  letter-spacing: 0.025em;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 20%;
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 15px;
+    margin-left: 40px;
+    height: 1px;
+    width: 60px;
+    transition: width .3s ease;
+    background: currentColor;
+  }
+  &:hover::after {
+    width: 120px;
+  }
+  @include below(md) {
+    font-size: 24px;
+  }
+}
+
+.section-content {
+  padding: 80px 0;
+  @include below(md) {
+    padding: 60px 0;
+  }
+}
+
+.section-content__title {
+  font-size: 38px;
+  line-height: 1.25;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  @include below(md) {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+.section-content__content {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  @include below(md) {
+    font-size: 16px;
+  }
+}
+
+.section-content__contact {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  @include below(md) {
+    margin-top: 24px;
+  }
+}
+
+.section-advantages {
+  padding: 100px 0;
+  @include below(md) {
+    padding: 80px 0;
+  }
+}
+
+.advantages-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  @include below(xl) {
+  }
+  @include below(lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages-item__icon {
+  width: 88px;
+  height: 88px;
+  flex-shrink: 0;
+  background: url('/wp-content/uploads/2020/10/about-list.png') no-repeat 50% 50%;
+  background-size: cover;
+  transition: transform .3s ease;
+  margin-right: 24px;
+  @include below(xl) {
+    margin-right: 16px;
+    width: 64px;
+    height: 64px;
+  }
+  @include below(lg) {
+    margin-right: 0;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 24px;
+  }
+}
+
+.advantages-item__content {
+  @include below(lg) {
+    text-align: center;
+  }
+}
+
+.advantages-item:hover .advantages-item__icon {
+  transform: translateY(-16px);
+  @include below(xl) {
+  }
+}
+
+.advantages-item__title {
+  font-size: 32px;
+  color: #E45A5A;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+  @include below(xl) {
+    font-size: 24px;
+  }
+  @include below(lg) {
+    font-size: 24px;
+  }
+}
+
+.advantages-item__desc {
+  font-size: 14px;
+  color: #9199a5;
+  line-height: 1.25;
+  margin-top: 12px;
+  @include below(xl) {
+  }
+  @include below(lg) {
+    font-size: 13px;
+  }
+}

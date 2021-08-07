@@ -1,0 +1,25 @@
+{% extends 'layouts/default.html' %}
+
+{% set pageClass = 'page-404' %}
+{% set pageTitle = '404' %}
+{% set fileName = '404.html' %}
+
+{% block main %}
+  <section class="page-404-section">
+    <div class="ui-container">
+      <div class="page-404-content">
+        <div class="page-404-number">4<span>x</span>4</div>
+        <div class="page-404-desc">
+          <span>Страница не найдена.</span><br />
+          Перейдите на другие страницы<br />
+          или вызовите помощь:
+        </div>
+        <div class="page-404-call">
+          <button class="ui-button-primary" data-micromodal-trigger="modal-feedback">
+            Связаться с нами
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,85 @@
+.page-404 {
+  padding-top: 120px;
+}
+
+.page-404-section {
+  min-height: calc(100vh - 136px - 68px);
+  overflow: hidden;
+}
+
+.page-404-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  z-index: 1;
+}
+
+.page-404-content::before {
+  content: '';
+  width: 405px;
+  height: 131px;
+  background: url('../images/pattern-stripe-1.svg');
+  position: absolute;
+  right: 125px;
+  top: 40px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.page-404-content::after {
+  content: '';
+  width: 335px;
+  height: 44px;
+  background: #fe5656;
+  position: absolute;
+  left: 99px;
+  top: -9px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.page-404-number {
+  position: relative;
+  font-size: 122px;
+  line-height: 1;
+  color: #000000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.page-404-number span {
+  font-size: 68px;
+  border: 2px dashed currentColor;
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  line-height: 72px;
+  text-align: center;
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 10px;
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+.page-404-desc {
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  color: #000000;
+  margin-top: 37px;
+  span {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.page-404-call {
+  margin-top: 31px;
+}

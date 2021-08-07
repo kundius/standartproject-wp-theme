@@ -1,0 +1,41 @@
+{
+  "name": "expert36",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp --env development",
+    "prod": "gulp --env production",
+    "build": "gulp build --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "autoprefixer": "^10.3.1",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-environments": "^1.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-html": "^2.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "postcss": "^8.3.6",
+    "postcss-csso": "^5.0.0",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "micromodal": "^0.4.6",
+    "normalize-scss": "^7.0.1",
+    "tiny-slider": "^2.9.3"
+  }
+}

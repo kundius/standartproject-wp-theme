@@ -1,0 +1,94 @@
+.footer {
+  background-image: url('/wp-content/uploads/2020/05/reno4-footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.footer__logo {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.footer__about {
+  font-size: 12px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer__menu {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li + li {
+    margin-top: 8px;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.footer__phone {
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 700;
+  @include below(lg) {
+    font-size: 20px;
+  }
+}
+
+.footer__email {
+  font-size: 14px;
+  margin-top: 24px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.footer__address {
+  font-size: 14px;
+  margin-top: 24px;
+  P {
+    margin: 0;
+  }
+  p + p {
+    margin-top: 8px;
+  }
+}
+
+.footer__copyright {
+  font-size: 14px;
+}
+
+.footer__creator {
+  opacity: 0.8;
+  transition: opacity .3s ease;
+  flex-shrink: 0;
+  img {
+    display: block;
+  }
+}
+
+
+.footer__creator:hover {
+  opacity: 1;
+}
