@@ -1,76 +1,55 @@
 <footer class="footer">
-  <div class="ui-container footer__container">
-    <div class="footer__logo">
-      <a href="/"><?php the_field('site_name', 'options') ?></a>
-    </div>
-
-    <div class="footer__copyright">
-      <?php the_field('copyright', 'options') ?>
-    </div>
-
-    <?php if ($social_links = get_field('social_links', 'options')): ?>
-    <div class="footer__social">
-      <?php foreach ($social_links as $item): ?>
-        <a href="<?php echo $item['link'] ?>" class="footer__social-vk" target="_blank">
-          <?php icon($item['icon'], [24, 24]) ?>
+  <div class="ui-container">
+    <div class="grid sm:grid-cols-3 gap-8 lg:gap-16 pt-16 sm:pt-24 pb-12">
+      <div>
+        <a href="<?php the_permalink(6) ?>" class="footer__logo">
+          <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" />
         </a>
-      <?php endforeach; ?>
+        <div class="footer__about">
+          <p>Проектно-строительная компания «Стандарт» <br><a href="<?php the_permalink(386) ?>">Проектирование складских, оптово-распределительных и логистических комплексов</a>, заводов, торговых центров (ТЦ), офисов, административных зданий,  овощехранилищ в Москве и в других городах России.</p>
+        </div>
+        <ul class="footer__menu">
+          <li class="menu-item"><a href="<?php the_permalink(632) ?>">Пользовательское соглашение</a></li>
+          <li class="menu-item"><a href="<?php the_permalink(3) ?>">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__title">Контакты</div>
+        <div class="footer__phone">
+          <a href="tel:<?php the_field('phone', 'options') ?>"><?php the_field('phone', 'options') ?></a>
+        </div>
+        <div class="footer__email">
+          <p>Если у вас есть вопросы, обращайтесь по адресу <a href="mailto:<?php the_field('email', 'options') ?>"><?php the_field('email', 'options') ?></a></p>
+        </div>
+        <div class="footer__address">
+          <p>г.&nbsp;Москва, Волоколамское шоссе, дом&nbsp;1, строение&nbsp;1</p>
+          <p>Ул.&nbsp;Порт-артурская&nbsp;11а, офис&nbsp;8, 2&nbsp;этаж</p>
+        </div>
+      </div>
+      <div>
+        <div class="footer__title">Услуги</div>
+        
+        <?php wp_nav_menu([
+          'theme_location' => 'footermenu',
+          'container' => false,
+          'menu_class' => 'footer__menu'
+        ]); ?>
+      </div>
     </div>
-    <?php endif; ?>
-
-    <div class="footer__requisites">
-      <?php the_field('requisites', 'options') ?>
-    </div>
-
-    <div class="footer__counters">
-      <?php the_field('counters', 'options') ?>
-    </div>
-
-    <div class="footer__creator">
-      <a href="https://domenart-studio.ru/" target="_blank">
-        <img src="<?php echo get_bloginfo('template_url') ?>/dist/images/creator.png" alt="" loading="lazy" />
+    <div class="flex items-center justify-between gap-8 md:gap-24 pb-4 pt-4 border-t">
+      <div class="footer__copyright">
+        <?php the_field('copyright', 'options') ?>
+      </div>
+      <a href="http://domenart-studio.ru/" class="footer__creator" target="_blank">
+        <img src="<?php bloginfo('template_url') ?>/dist/images/creator.png" />
       </a>
-    </div>
-
-    <div class="footer__sitemap">
-      <a href="<?php the_permalink(58) ?>">Карта сайта</a>
-    </div>
-
-    <div class="footer__agreement">
-      <a href="<?php the_permalink(55) ?>">Пользовательское соглашение</a>
-    </div>
-
-    <div class="footer__policy">
-      <a href="<?php the_permalink(3) ?>">Политика конфиденциальности и обработки персональных данных</a>
     </div>
   </div>
 </footer>
 
-<div class="modal micromodal-slide" id="modal-feedback" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-feedback-title">
-      <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-      <div class="modal__title">
-        Заказать обратный звонок
-      </div>
-      <?php echo do_shortcode('[contact-form-7 id="5" title="Заказать обратный звонок"]') ?>
-    </div>
-  </div>
-</div>
-
-<div class="modal micromodal-slide" id="modal-cause" aria-hidden="true">
-  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-cause-title">
-      <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-      <div class="modal__title">
-        Вызвать комиссара
-      </div>
-      <?php echo do_shortcode('[contact-form-7 id="147" title="Вызвать комиссара"]') ?>
-    </div>
-  </div>
-</div>
+<?php get_template_part('partials/modals'); ?>
 
 <button class="ui-scrolltop"></button>
 
-<script src="<?php echo get_bloginfo('template_url') ?>/dist/scripts/index.js"></script>
+<script src="<?php echo get_bloginfo('template_url') ?>/dist/main.js"></script>
 <?php wp_footer() ?>

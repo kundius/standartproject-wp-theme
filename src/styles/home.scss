@@ -80,14 +80,18 @@
   }
 }
 
-.section-content {
+.section-about {
   padding: 80px 0;
   @include below(md) {
     padding: 60px 0;
   }
 }
 
-.section-content__title {
+.short-about {
+  
+}
+
+.short-about__title {
   font-size: 38px;
   line-height: 1.25;
   text-align: center;
@@ -100,7 +104,7 @@
   }
 }
 
-.section-content__content {
+.short-about__content {
   font-size: 18px;
   max-width: 800px;
   margin: 0 auto;
@@ -110,7 +114,7 @@
   }
 }
 
-.section-content__contact {
+.short-about__contact {
   margin-top: 40px;
   display: flex;
   justify-content: center;
@@ -142,7 +146,7 @@
   width: 88px;
   height: 88px;
   flex-shrink: 0;
-  background: url('/wp-content/uploads/2020/10/about-list.png') no-repeat 50% 50%;
+  background: url('../images/about-list.png') no-repeat 50% 50%;
   background-size: cover;
   transition: transform .3s ease;
   margin-right: 24px;

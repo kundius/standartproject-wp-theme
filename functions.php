@@ -10,15 +10,12 @@ require_once(__DIR__ . '/includes/editor-blocks.php');
 add_action('after_setup_theme', function() {
   register_nav_menus([
     'mainmenu' => 'Основное меню',
+    'footermenu' => 'Меню в подвале',
     'sitemap' => 'Карта сайта'
   ]);
 });
 
 add_post_type_support('page', 'excerpt');
-
-function icon ($name, $size = [20, 20]) {
-  echo '<svg class="ui-icon" width="' . $size[0] . '" height="' . $size[1] . '"><use xlink:href="' . get_bloginfo('template_url') . '/dist/images/sprite.svg#' . $name . '"></use></svg>';
-}
 
 function template_part ($atts, $content = null) {
   $tp_atts = shortcode_atts(['path' =>  null], $atts);

@@ -39,10 +39,6 @@ $list_items = array_slice($query->posts, $latest_count);
 
     <section class="page-section">
       <div class="ui-container">
-        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-          <?php bcn_display() ?>
-        </div>
-
         <h1 class="page-title"><?php single_cat_title() ?></h1>
 
         <?php if ($query->have_posts()): ?>
@@ -60,7 +56,7 @@ $list_items = array_slice($query->posts, $latest_count);
                   <div class="articles-item-large__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
                   <div class="articles-item-large__title"><?php echo get_the_title($item) ?></div>
                   <?php if ($excerpt = get_the_excerpt($item)): ?>
-                    <div class="articles-item-large__desc"><?php echo $excerpt ?></div>
+                    <div class="articles-item-large__desc"><?php echo wp_trim_words($excerpt, 12, '...') ?></div>
                   <?php endif; ?>
                   <div class="articles-item-large__more">
                     <a href="<?php the_permalink($item) ?>" class="ui-button-more-alt">читать дальше<span class="ui-button-more-alt__arrow"></span></a>
@@ -84,7 +80,7 @@ $list_items = array_slice($query->posts, $latest_count);
                   <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
                   <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
                   <?php if ($excerpt = get_the_excerpt($item)): ?>
-                    <div class="articles-item__desc"><?php echo $excerpt ?></div>
+                    <div class="articles-item__desc"><?php echo wp_trim_words($excerpt, 20, '...') ?></div>
                   <?php endif; ?>
                 </article>
               </div>
@@ -93,15 +89,12 @@ $list_items = array_slice($query->posts, $latest_count);
 
             <div class="articles-layout__list-more">
               <?php wp_pagenavi(['query' => $query]) ?>
-              <!-- <button class="ui-button-primary">Показать еще</button> -->
             </div>
           </div>
         </div>
         <?php endif; ?>
       </div>
     </section>
-
-    <?php if (get_field('show_contacts')): get_template_part('partials/contacts', 'services'); endif; ?>
 
     <?php get_template_part('partials/footer'); ?>
   </body>

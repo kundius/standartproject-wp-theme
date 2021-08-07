@@ -39,10 +39,6 @@ $list_items = array_slice($query->posts, $latest_count);
 
     <section class="page-section">
       <div class="ui-container">
-        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-          <?php bcn_display() ?>
-        </div>
-
         <h1 class="page-title"><?php single_cat_title() ?></h1>
 
         <?php if ($query->have_posts()): ?>
@@ -93,15 +89,12 @@ $list_items = array_slice($query->posts, $latest_count);
 
             <div class="articles-layout__list-more">
               <?php wp_pagenavi(['query' => $query]) ?>
-              <!-- <button class="ui-button-primary">Показать еще</button> -->
             </div>
           </div>
         </div>
         <?php endif; ?>
       </div>
     </section>
-
-    <?php if (get_field('show_contacts')): get_template_part('partials/contacts', 'services'); endif; ?>
 
     <?php get_template_part('partials/footer'); ?>
   </body>

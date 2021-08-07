@@ -1,8 +1,8 @@
 /*
-Theme Name: standartproject-theme
+Theme Name: standartproject-wp-theme
 Author: DomenART
 Author URI: http://domenart-studio.ru/
-GitHub Theme URI: https://github.com/kundius/standartproject-theme
+GitHub Theme URI: https://github.com/kundius/standartproject-wp-theme
 */
 
-@import 'dist/styles/index.css';
+@import 'dist/main.css';

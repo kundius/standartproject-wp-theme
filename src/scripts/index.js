@@ -1,3 +1,15 @@
+import lightGallery from 'lightgallery'
+import MicroModal from 'micromodal'
+
+import './drawer'
+import './improve-focus'
+
+import 'lightgallery/css/lightgallery-bundle.min.css'
+import '../styles/index.scss'
+import '../images/back_header.jpg'
+import '../images/creator.png'
+import '../images/logo.png'
+
 MicroModal.init({
   awaitOpenAnimation: true,
   awaitCloseAnimation: true
@@ -32,18 +44,27 @@ if (scrolltop && header) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   })
   const handleScroll = throttle((event) => {
-    if (window.scrollY >= 50 && !header.classList.contains('header_fixed')) {
+    if (window.scrollY >= 20 && !header.classList.contains('header_fixed')) {
       header.classList.add('header_fixed')
     }
-    if (window.scrollY < 50 && header.classList.contains('header_fixed')) {
+    if (window.scrollY < 20 && header.classList.contains('header_fixed')) {
       header.classList.remove('header_fixed')
     }
-    if (window.scrollY >= 400 && !header.classList.contains('ui-scrolltop_visible')) {
-      header.classList.add('ui-scrolltop_visible')
+    if (window.scrollY >= 400 && !scrolltop.classList.contains('ui-scrolltop_visible')) {
+      scrolltop.classList.add('ui-scrolltop_visible')
     }
-    if (window.scrollY < 400 && header.classList.contains('ui-scrolltop_visible')) {
-      header.classList.remove('ui-scrolltop_visible')
+    if (window.scrollY < 400 && scrolltop.classList.contains('ui-scrolltop_visible')) {
+      scrolltop.classList.remove('ui-scrolltop_visible')
     }
   }, 300)
   window.addEventListener('scroll', handleScroll)
+}
+
+const gallery = document.getElementById('gallery')
+if (gallery) {
+  lightGallery(gallery, {
+    selector: 'a',
+    // plugins: [lgZoom, lgThumbnail],
+    speed: 500
+  })
 }

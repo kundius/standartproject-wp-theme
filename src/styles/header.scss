@@ -1,14 +1,17 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 200;
-  background: transparent;
+  background: #ffffff;
   transition: .3s ease;
   transition-property: background, box-shadow;
+  .page-home & {
+    background: transparent;
+    &_fixed {
+      background: #ffffff;
+    }
+  }
   &_fixed {
-    background: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
   }
 }
@@ -174,6 +177,7 @@
   text-decoration: none;
   width: 220px;
   flex-shrink: 0;
+  transform: translateY(4px);
   img {
     display: block;
     width: 100%;
@@ -181,6 +185,7 @@
   }
   @include below(xl) {
     width: 160px;
+    transform: translateY(0);
   }
   @include below(md) {
     margin: 0 auto;
@@ -268,6 +273,11 @@
 .header-nav > ul > .menu-item > a:hover {
   color: rgb(255, 64, 64);
   text-decoration: none;
+  border-bottom-color: rgb(255, 64, 64);
+}
+
+.header-nav > ul > .menu-item.current-menu-item > a {
+  color: rgb(255, 64, 64);
   border-bottom-color: rgb(255, 64, 64);
 }
 

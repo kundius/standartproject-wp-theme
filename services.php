@@ -17,48 +17,46 @@ $services = new WP_Query([
   <body>
     <?php get_template_part('partials/header'); ?>
 
-    <section class="page-section">
-      <div class="ui-container">
-        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-          <?php bcn_display() ?>
-        </div>
+    <main class="main">
+      <section class="page-section">
+        <div class="ui-container">
+          <h1 class="page-title"><?php the_title() ?></h1>
 
-        <h1 class="page-title"><?php the_title() ?></h1>
-
-        <?php if ($services->have_posts()): ?>
-        <div class="services-list">
-          <?php $index = 0; while ($services->have_posts()): $services->the_post(); $index++; ?>
-            <article class="services-item<?php if ($index % 4 == 0 || $index % 4 == 1): ?> services-item-large<?php endif; ?>">
-              <div class="services-item__number"><?php echo $index ?></div>
-              <div class="services-item__columns">
-                <div class="services-item__info">
-                  <div class="services-item__title"><?php the_title() ?></div>
-                  <div class="services-item__short-desc"><?php the_excerpt() ?></div>
-                  <div class="services-item__separator"></div>
-                  <div class="services-item__more"><a href="<?php the_permalink() ?>">Подробнее</a></div>
-                  <div class="services-item__separator-alt"></div>
-                </div>
-                <div class="services-item__long-desc">
-                  <?php the_field('detailed_description') ?>
-                  <p>
-                    <button class="ui-button-primary" data-micromodal-trigger="modal-cause">
-                      Вызвать комиссара<span class="ui-button-primary__icon"><?php icon('intro-phone', [18, 21]) ?></span>
-                    </button>
-                  </p>
-                </div>
+          <?php if ($services->have_posts()): ?>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-20">
+            <?php $index = 0; while ($services->have_posts()): $services->the_post(); $index++; ?>
+              <div class="services-item">
+                <figure class="services-item__image">
+                  <?php if (has_post_thumbnail()): the_post_thumbnail($post->ID, 'medium'); endif; ?>
+                </figure>
+                <h3 class="services-item__title">
+                  <a href="<?php the_permalink() ?>">
+                    <?php the_title() ?>
+                  </a>
+                </h3>
               </div>
-            </article>
-          <?php endwhile; ?>
+            <?php endwhile; ?>
+          </div>
+          <?php endif; wp_reset_query(); ?>
+        
+          <div class="page-content content">
+            <?php the_content() ?>
+          </div>
         </div>
-        <?php endif; wp_reset_query(); ?>
-      
-        <div class="page-content content">
-          <?php the_content() ?>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <?php if (get_field('show_contacts')): get_template_part('partials/contacts', 'services'); endif; ?>
+      <section class="section-about">
+        <div class="ui-container">
+          <?php get_template_part('partials/short-about'); ?>
+        </div>
+      </section>
+
+      <section class="section-advantages">
+        <div class="ui-container">
+          <?php get_template_part('partials/advantages'); ?>
+        </div>
+      </section>
+    </main>
 
     <?php get_template_part('partials/footer'); ?>
   </body>
