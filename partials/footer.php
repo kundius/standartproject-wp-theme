@@ -22,8 +22,7 @@
           <p>Если у вас есть вопросы, обращайтесь по адресу <a href="mailto:<?php the_field('email', 'options') ?>"><?php the_field('email', 'options') ?></a></p>
         </div>
         <div class="footer__address">
-          <p>г.&nbsp;Москва, Волоколамское шоссе, дом&nbsp;1, строение&nbsp;1</p>
-          <p>Ул.&nbsp;Порт-артурская&nbsp;11а, офис&nbsp;8, 2&nbsp;этаж</p>
+          <?php the_field('address', 'options') ?>
         </div>
       </div>
       <div>

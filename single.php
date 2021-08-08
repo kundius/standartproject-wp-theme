@@ -1,3 +1,18 @@
+<?php
+$categories = get_the_category($post->ID);
+$category_ids = [];
+foreach ($categories as $individual_category) {
+  $category_ids[] = $individual_category->term_id;
+}
+$args = [
+  'category__in' => $category_ids,
+  'post__not_in' => [$post->ID],
+  'showposts'=> 3,
+  'orderby'=> 'rand',
+  'caller_get_posts'=> 1
+];
+$see_also = new wp_query($args);
+?>
 <!DOCTYPE html>
 <html lang="ru" itemscope itemtype="http://schema.org/WebSite">
   <head>
@@ -29,8 +44,8 @@
               <div id="gallery" class="grid grid-cols-2 gap-2 sm:gap-8 mt-12">
                 <?php foreach ($gallery as $image): ?>
                   <figure>
-                    <a href="<?php echo $image['url'] ?>">
-                      <img src="<?php echo $image['sizes']['large'] ?>" alt="<?php echo $image['alt'] ?>" class="transition block rounded-xl shadow-md hover:shadow-lg">
+                    <a href="<?php echo $image['url'] ?>" class="gallery-item">
+                      <img src="<?php echo $image['sizes']['large'] ?>" alt="<?php echo $image['alt'] ?>">
                     </a>
                   </figure>
                 <?php endforeach; ?>
@@ -56,6 +71,29 @@
               </div>
             </div>
           </div>
+
+          <?php if ($see_also->have_posts()): ?>
+            <div class="mt-24">
+              <div class="text-3xl mb-8">Похожие записи</div>
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <?php foreach ($see_also->posts as $item): ?>
+                <article class="articles-item">
+                  <?php if ($thumbnail = get_the_post_thumbnail($item, 'w400')): ?>
+                  <div class="articles-item__image">
+                    <?php echo $thumbnail ?>
+                  </div>
+                  <?php endif; ?>
+                  <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
+                  <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
+                  <?php if ($excerpt = get_the_excerpt($item)): ?>
+                    <div class="articles-item__desc"><?php echo wp_trim_words($excerpt, 20, '...') ?></div>
+                  <?php endif; ?>
+                </article>
+                <?php endforeach; ?>
+              </div>
+            </div>
+          <?php endif; ?>
+
         </div>
       </section>
     </main>

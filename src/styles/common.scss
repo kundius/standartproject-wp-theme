@@ -26,7 +26,7 @@ h1 {
   font-size: 48px;
   line-height: 1.25;
   font-weight: 700;
-  margin: 0 0 1em;
+  margin: 0 0 1.5em;
   @include below(sm) {
     font-size: 32px;
   }
@@ -360,4 +360,28 @@ body.ui-focus-disabled *::-moz-focus-inner {
   border-top: 1px solid currentColor;
   transform: translateY(-50%) rotate(45deg);
   mix-blend-mode: difference;
+}
+
+.gallery-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, .4);
+  transition: box-shadow .4s ease;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .4s ease;
+}
+
+.gallery-item:hover {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, .6);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
 }

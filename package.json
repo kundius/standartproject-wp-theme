@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode=development --watch",
-    "build": "webpack --mode=production",
-    "deploy": "webpack --mode=production && git add . && git commit -m deploy && git push"
+    "dev": "cross-env NODE_ENV=development webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack",
+    "deploy": "cross-env NODE_ENV=production webpack && git add . && git commit -m deploy && git push"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "babel-preset-minify": "^0.5.1",
     "browser-sync": "^2.26.13",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
     "cssnano": "^5.0.7",
     "file-loader": "^6.2.0",
