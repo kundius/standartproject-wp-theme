@@ -40,7 +40,7 @@
         <?php the_field('copyright', 'options') ?>
       </div>
       <a href="http://domenart-studio.ru/" class="footer__creator" target="_blank">
-        <img src="<?php bloginfo('template_url') ?>/dist/images/creator.png" />
+        <img src="<?php bloginfo('template_url') ?>/dist/images/creator.png" width="98" height="27" />
       </a>
     </div>
   </div>
