@@ -3,7 +3,11 @@
     <div class="grid sm:grid-cols-3 gap-8 lg:gap-16 pt-16 sm:pt-24 pb-12">
       <div>
         <a href="<?php the_permalink(6) ?>" class="footer__logo">
-          <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" />
+          <img
+            src="<?php bloginfo('template_url') ?>/dist/images/logo.png"
+            width="220"
+            height="55"
+          />
         </a>
         <div class="footer__about">
           <p>Проектно-строительная компания «Стандарт» <br><a href="<?php the_permalink(386) ?>">Проектирование складских, оптово-распределительных и логистических комплексов</a>, заводов, торговых центров (ТЦ), офисов, административных зданий,  овощехранилищ в Москве и в других городах России.</p>

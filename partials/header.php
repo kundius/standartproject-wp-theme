@@ -158,7 +158,12 @@
     </button>
 
     <a href="<?php the_permalink(6) ?>" class="header__logo">
-      <img src="<?php bloginfo('template_url') ?>/dist/images/logo.png" alt="<?php bloginfo('description') ?>" />
+      <img
+        src="<?php bloginfo('template_url') ?>/dist/images/logo.png"
+        alt="<?php bloginfo('description') ?>"
+        width="220"
+        height="55"
+      />
     </a>
 
     <nav class="header-nav flex">
