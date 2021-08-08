@@ -1,12 +1,10 @@
-/**
- * Theme Name:       standartproject-wp-theme
- * Theme URI:        https://domenart-studio.ru/
- * Version:          0.1.0
- * Description:      standartproject-wp-theme
- * Author:           DomenART
- * Template:         standartproject-wp-theme
- * Template Version: 1.0.0
- * GitHub Theme URI: https://github.com/kundius/standartproject-wp-theme
- */
+/*
+Theme Name: standartproject-wp-theme
+Author: DomenART
+Author URI: http://domenart-studio.ru/
+GitHub Branch: main
+GitHub Theme URI: https://github.com/kundius/standartproject-wp-theme
+*/
+
 
 @import 'dist/main.css';
