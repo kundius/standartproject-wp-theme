@@ -27,10 +27,10 @@ Template Name: Контакты
               </p>
               <div class="text-3xl font-semibold mt-8">Москва</div>
               <p class="mt-4">
-                г. Москва, Волоколамское шоссе, дом 1, строение 1
+                г. Москва, Багратионовский проезд, 7к1, этаж 4, помещение 1, комната 28
               </p>
               <div class="mt-8">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ea0fe3f239630579e6d9e290388821d258483c0c18b103375e6a6ef93c53e42&width=100%25&height=400&lang=ru_RU&scroll=true"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ea0fe3f239630579e6d9e290388821d258483c0c18b103375e6a6ef93c53e42&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
               </div>
             </div>
             <div>
