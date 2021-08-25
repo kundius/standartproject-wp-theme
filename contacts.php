@@ -27,7 +27,7 @@ Template Name: Контакты
               </p>
               <div class="text-3xl font-semibold mt-8">Москва</div>
               <p class="mt-4">
-                г. Москва, Багратионовский проезд, 7к1, этаж 4, помещение 1, комната 28
+                125080, Багратионовский проезд, 7к1, этаж 4, помещение 1, комната 28
               </p>
               <div class="mt-8">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ea0fe3f239630579e6d9e290388821d258483c0c18b103375e6a6ef93c53e42&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -39,7 +39,7 @@ Template Name: Контакты
               </div>
               <div class="text-3xl font-semibold mt-8">Воронеж</div>
               <p class="mt-4">
-                Ул. Порт-артурская 11а, офис 8, 2 этаж
+                394007, ул. Порт-Артурская 11а, офис 8, 2 этаж
               </p>
               <div class="mt-8">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabf0b35e85e48a2735143faa474926a0af457d531e25aa9aafb2c24cc71a3268&width=100%&height=400&lang=ru_RU&scroll=true"></script>
