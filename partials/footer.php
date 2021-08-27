@@ -9,12 +9,12 @@
             height="55"
           />
         </a>
-        <div class="footer__about">
+        <div class="footer__about" style="margin-bottom: 20px;">
           <p>Проектно-строительная компания «Стандарт» <br><a href="<?php the_permalink(386) ?>">Проектирование складских, оптово-распределительных и логистических комплексов</a>, заводов, торговых центров (ТЦ), офисов, административных зданий,  овощехранилищ в Москве и в других городах России.</p>
         </div>
-        <p>
-          <a href="https://indparks.ru/"><img src="/wp-content/uploads/2021/08/aip-logo-member-ru-e1630059740556.png" width="80" height="87" /></a>
-        </p>
+        <div style="margin-bottom: 20px;">
+          <a href="https://indparks.ru/" target="_blank"><img src="/wp-content/uploads/2021/08/aip-logo-member-ru-e1630059740556.png" width="80" height="87" /></a>
+        </div>
         <ul class="footer__menu">
           <li class="menu-item"><a href="<?php the_permalink(632) ?>">Пользовательское соглашение</a></li>
           <li class="menu-item"><a href="<?php the_permalink(3) ?>">Политика конфиденциальности</a></li>
