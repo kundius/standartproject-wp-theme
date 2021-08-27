@@ -16,6 +16,7 @@
           <li class="menu-item"><a href="<?php the_permalink(632) ?>">Пользовательское соглашение</a></li>
           <li class="menu-item"><a href="<?php the_permalink(3) ?>">Политика конфиденциальности</a></li>
         </ul>
+        <p><img src="/wp-content/uploads/2021/08/aip-logo-member-ru-e1630059740556.png" width="200" height="219" /></p>
       </div>
       <div>
         <div class="footer__title">Контакты</div>
