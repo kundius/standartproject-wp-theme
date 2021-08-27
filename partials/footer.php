@@ -12,7 +12,13 @@
         <div class="footer__about">
           <p>Проектно-строительная компания «Стандарт» <br><a href="<?php the_permalink(386) ?>">Проектирование складских, оптово-распределительных и логистических комплексов</a>, заводов, торговых центров (ТЦ), офисов, административных зданий,  овощехранилищ в Москве и в других городах России.</p>
         </div>
-        <p><img src="/wp-content/uploads/2021/08/aip-logo-member-ru-e1630059740556.png" width="80" height="87" /></p>
+        <p>
+          <a href="https://indparks.ru/"><img src="/wp-content/uploads/2021/08/aip-logo-member-ru-e1630059740556.png" width="80" height="87" /></a>
+        </p>
+        <ul class="footer__menu">
+          <li class="menu-item"><a href="<?php the_permalink(632) ?>">Пользовательское соглашение</a></li>
+          <li class="menu-item"><a href="<?php the_permalink(3) ?>">Политика конфиденциальности</a></li>
+        </ul>
       </div>
       <div>
         <div class="footer__title">Контакты</div>
@@ -34,13 +40,6 @@
           'container' => false,
           'menu_class' => 'footer__menu'
         ]); ?>
-        
-        <hr />
-        
-        <ul class="footer__menu">
-          <li class="menu-item"><a href="<?php the_permalink(632) ?>">Пользовательское соглашение</a></li>
-          <li class="menu-item"><a href="<?php the_permalink(3) ?>">Политика конфиденциальности</a></li>
-        </ul>
       </div>
     </div>
     <div class="flex items-center justify-between gap-8 md:gap-24 pb-4 pt-4 border-t">
