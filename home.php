@@ -112,32 +112,7 @@ $news = new WP_Query([
         </div>
       </div>
     </section>
-    <!-- 
-    <section class="mt-8 mb-16">
-      <div class="ui-container">
-        <div class="flex items-center justify-between mb-8">
-          <div class="text-3xl font-semibold">Новости</div>
-          <a href="<?php echo get_category_link(15) ?>" class="text-xs px-3 bg-gray-200 text-gray-800 rounded-full">Смотреть все</a>
-        </div>
-        <div class="grid sm:grid-cols-4 gap-12 align-start">
-          <?php foreach ($news->posts as $item): ?>
-          <article class="articles-item">
-            <?php if ($thumbnail = get_the_post_thumbnail($item, '360x240')): ?>
-            <div class="articles-item__image">
-            <?php echo $thumbnail ?>
-            </div>
-            <?php endif; ?>
-            <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
-            <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
-            <?php if ($excerpt = get_the_excerpt($item)): ?>
-            <div class="articles-item__desc"><?php echo wp_trim_words($excerpt, 20, '...') ?></div>
-            <?php endif; ?>
-          </article>
-          <?php endforeach; ?>
-        </div>
-      </div>
-    </section>
- -->
+    
     <?php get_template_part('partials/footer'); ?>
   </body>
 </html>
