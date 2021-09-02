@@ -11,15 +11,15 @@ $services = new WP_Query([
 
 $news = new WP_Query([
   'post_type' => 'post',
-  'posts_per_page' => 4,
+  'posts_per_page' => 3,
   'order' => 'DESC',
   'orderby' => 'date',
   'tax_query' => [
     'relation' => 'OR',
     [
-			'taxonomy' => 'category',
-			'field' => 'id',
-			'terms' => [15]
+	'taxonomy' => 'category',
+	'field' => 'id',
+	'terms' => [15]
     ]
   ]
 ]);
@@ -84,8 +84,12 @@ $news = new WP_Query([
       </div>
     </section>
     
-    <section>
+    <section class="mt-8 mb-8">
       <div class="ui-container">
+	<div class="flex items-center mb-4">
+		<div class="text-lg font-bold">Новости</div>
+		<a href="<?php echo get_category_link(15) ?>">Смотреть все</a>
+	</div>
       	<div class="grid sm:grid-cols-3 gap-12 align-start">
 	<?php foreach ($news->posts as $item): ?>
 	<div>
