@@ -91,25 +91,20 @@ $news = new WP_Query([
 		<a href="<?php echo get_category_link(15) ?>" style="font-size: 14px;color: #fe5656;border-bottom: 1px solid currentColor;">Смотреть все</a>
 	</div>
       	<div class="grid sm:grid-cols-3 gap-12 align-start">
-	<?php foreach ($news->posts as $item): ?>
-	<div>
-	  <article class="articles-item-large">
-	    <?php if ($thumbnail = get_the_post_thumbnail($item, '360x240')): ?>
-	    <div class="articles-item-large__image">
-	      <?php echo $thumbnail ?>
-	    </div>
-	    <?php endif; ?>
-	    <div class="articles-item-large__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
-	    <div class="articles-item-large__title"><?php echo get_the_title($item) ?></div>
-	    <?php if ($excerpt = get_the_excerpt($item)): ?>
-	      <div class="articles-item-large__desc"><?php echo wp_trim_words($excerpt, 12, '...') ?></div>
-	    <?php endif; ?>
-	    <div class="articles-item-large__more">
-	      <a href="<?php the_permalink($item) ?>" class="ui-button-more-alt">читать дальше<span class="ui-button-more-alt__arrow"></span></a>
-	    </div>
-	  </article>
-	</div>
-	<?php endforeach; ?>
+		<?php foreach ($news->posts as $item): ?>
+		<article class="articles-item">
+		  <?php if ($thumbnail = get_the_post_thumbnail($item, '360x240')): ?>
+		  <div class="articles-item__image">
+		    <?php echo $thumbnail ?>
+		  </div>
+		  <?php endif; ?>
+		  <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
+		  <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
+		  <?php if ($excerpt = get_the_excerpt($item)): ?>
+		    <div class="articles-item__desc"><?php echo wp_trim_words($excerpt, 20, '...') ?></div>
+		  <?php endif; ?>
+		</article>
+		<?php endforeach; ?>
 	</div>
       </div>
     </section>
