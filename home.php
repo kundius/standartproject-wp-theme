@@ -11,7 +11,7 @@ $services = new WP_Query([
 
 $news = new WP_Query([
   'post_type' => 'post',
-  'posts_per_page' => 3,
+  'posts_per_page' => 4,
   'order' => 'DESC',
   'orderby' => 'date',
   'tax_query' => [
@@ -90,7 +90,7 @@ $news = new WP_Query([
 		<div style="font-size: 32px;font-weight: 600;">Новости</div>
 		<a href="<?php echo get_category_link(15) ?>" style="font-size: 14px;color: #fe5656;border-bottom: 1px solid currentColor;">Смотреть все</a>
 	</div>
-      	<div class="grid sm:grid-cols-3 gap-12 align-start">
+      	<div class="grid sm:grid-cols-4 gap-12 align-start">
 		<?php foreach ($news->posts as $item): ?>
 		<article class="articles-item">
 		  <?php if ($thumbnail = get_the_post_thumbnail($item, '360x240')): ?>
