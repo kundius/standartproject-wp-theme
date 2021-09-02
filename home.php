@@ -84,7 +84,7 @@ $news = new WP_Query([
       </div>
     </section>
     
-    <section style="margin-top: 48px; margin-bottom: 48px">
+    <section style="margin-top: 48px; margin-bottom: 100px">
       <div class="ui-container">
 	<div class="flex items-center justify-between" style="margin-bottom: 24px">
 		<div style="font-size: 32px;font-weight: 600;">Новости</div>
