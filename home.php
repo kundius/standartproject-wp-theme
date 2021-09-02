@@ -86,25 +86,27 @@ $news = new WP_Query([
     
     <section>
       <div class="ui-container">
-        <?php foreach ($news->posts as $item): ?>
-        <div>
-          <article class="articles-item-large">
-            <?php if ($thumbnail = get_the_post_thumbnail($item, 'medium')): ?>
-            <div class="articles-item-large__image">
-              <?php echo $thumbnail ?>
-            </div>
-            <?php endif; ?>
-            <div class="articles-item-large__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
-            <div class="articles-item-large__title"><?php echo get_the_title($item) ?></div>
-            <?php if ($excerpt = get_the_excerpt($item)): ?>
-              <div class="articles-item-large__desc"><?php echo wp_trim_words($excerpt, 12, '...') ?></div>
-            <?php endif; ?>
-            <div class="articles-item-large__more">
-              <a href="<?php the_permalink($item) ?>" class="ui-button-more-alt">читать дальше<span class="ui-button-more-alt__arrow"></span></a>
-            </div>
-          </article>
-        </div>
-        <?php endforeach; ?>
+      	<div class="grid sm:grid-cols-3 gap-12 align-start">
+	<?php foreach ($news->posts as $item): ?>
+	<div>
+	  <article class="articles-item-large">
+	    <?php if ($thumbnail = get_the_post_thumbnail($item, 'medium')): ?>
+	    <div class="articles-item-large__image">
+	      <?php echo $thumbnail ?>
+	    </div>
+	    <?php endif; ?>
+	    <div class="articles-item-large__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
+	    <div class="articles-item-large__title"><?php echo get_the_title($item) ?></div>
+	    <?php if ($excerpt = get_the_excerpt($item)): ?>
+	      <div class="articles-item-large__desc"><?php echo wp_trim_words($excerpt, 12, '...') ?></div>
+	    <?php endif; ?>
+	    <div class="articles-item-large__more">
+	      <a href="<?php the_permalink($item) ?>" class="ui-button-more-alt">читать дальше<span class="ui-button-more-alt__arrow"></span></a>
+	    </div>
+	  </article>
+	</div>
+	<?php endforeach; ?>
+	</div>
       </div>
     </section>
 
