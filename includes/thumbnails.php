@@ -2,10 +2,10 @@
 
 add_theme_support('post-thumbnails', array('post', 'page', 'project'));
 add_image_size('w400', 400, 9999, false);
-add_image_size('w360x240', 360, 240, true);
+add_image_size('360x240', 360, 240, true);
 
 function srcset($image, $wh) {
-  $wh = !empty($wh) ? $wh : ['thumbnail', 'medium', 'large', 'w400'];
+  $wh = !empty($wh) ? $wh : ['thumbnail', 'medium', 'large', 'w400', '360x240'];
 
   $srcset = [];
   foreach ($wh as $size) {
