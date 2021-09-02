@@ -94,7 +94,7 @@ $news = new WP_Query([
 	<?php foreach ($news->posts as $item): ?>
 	<div>
 	  <article class="articles-item-large">
-	    <?php if ($thumbnail = get_the_post_thumbnail($item, 'small')): ?>
+	    <?php if ($thumbnail = get_the_post_thumbnail($item, '360x240')): ?>
 	    <div class="articles-item-large__image">
 	      <?php echo $thumbnail ?>
 	    </div>
