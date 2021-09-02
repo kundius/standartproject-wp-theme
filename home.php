@@ -98,9 +98,6 @@ $news = new WP_Query([
               <?php endif; ?>
               <div class="articles-item__date"><?php echo get_the_date('d.m.Y', $item) ?></div>
               <div class="articles-item__title"><a href="<?php the_permalink($item) ?>"><?php echo get_the_title($item) ?></a></div>
-              <?php if ($excerpt = get_the_excerpt($item)): ?>
-              <div class="articles-item__desc"><?php echo wp_trim_words($excerpt, 20, '...') ?></div>
-              <?php endif; ?>
             </article>
             <?php endforeach; ?>
           </div>
