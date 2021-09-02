@@ -112,7 +112,7 @@ $news = new WP_Query([
         </div>
       </div>
     </section>
-    
+    <!-- 
     <section class="mt-8 mb-16">
       <div class="ui-container">
         <div class="flex items-center justify-between mb-8">
@@ -137,7 +137,7 @@ $news = new WP_Query([
         </div>
       </div>
     </section>
-
+ -->
     <?php get_template_part('partials/footer'); ?>
   </body>
 </html>
