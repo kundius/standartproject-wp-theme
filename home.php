@@ -87,8 +87,8 @@ $news = new WP_Query([
     <section class="mt-8 mb-16">
       <div class="ui-container">
         <div class="flex items-center justify-between mb-8">
-          <div class="text-2xl font-semibold">Новости</div>
-          <a href="<?php echo get_category_link(15) ?>" class="text-sm" style="color: #fe5656;border-bottom: 1px solid currentColor;">Смотреть все</a>
+          <div class="text-3xl font-semibold">Новости</div>
+          <a href="<?php echo get_category_link(15) ?>" class="text-xs px-3 bg-gray-200 text-gray-800 rounded-full">Смотреть все</a>
         </div>
         <div class="grid sm:grid-cols-4 gap-12 align-start">
         <?php foreach ($news->posts as $item): ?>
