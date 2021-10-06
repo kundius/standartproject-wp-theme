@@ -252,8 +252,8 @@
 .header-nav > ul > .menu-item > a {
   font-size: 16px;
   line-height: 77px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
   color: rgb(26, 42, 61);
   text-decoration: none;
   white-space: nowrap;
@@ -265,8 +265,6 @@
   @include below(xl) {
     line-height: 61px;
     font-size: 14px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
