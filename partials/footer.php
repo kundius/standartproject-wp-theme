@@ -19,6 +19,7 @@
           <li class="menu-item"><a href="<?php the_permalink(632) ?>">Пользовательское соглашение</a></li>
           <li class="menu-item"><a href="<?php the_permalink(3) ?>">Политика конфиденциальности</a></li>
         </ul>
+        <?php the_field('counters', 'options') ?>
       </div>
       <div>
         <div class="footer__title">Контакты</div>
