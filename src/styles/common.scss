@@ -22,6 +22,19 @@ body {
   }
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 300px;
+  z-index: 9999;
+  pointer-events: none;
+  background: url('../images/ng-left-top.png') no-repeat 0 0;
+  background-size: contain;
+}
+
 h1 {
   font-size: 48px;
   line-height: 1.25;
