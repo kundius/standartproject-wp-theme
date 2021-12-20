@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 200;
@@ -14,13 +14,19 @@
   }
   &_fixed {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-    position: fixed;
   }
   &_new-year {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     .page-home & {
       background: #ffffff;
     }
+  }
+}
+
+.header-placeholder {
+  height: 80px;
+  @include below(xl) {
+    height: 64px;
   }
 }
 

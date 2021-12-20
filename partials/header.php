@@ -195,3 +195,5 @@
     </button>
   </div>
 </header>
+
+<div class="header-placeholder"></div>
