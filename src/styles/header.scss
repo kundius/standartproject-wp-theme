@@ -356,6 +356,10 @@
     right: auto;
     left: calc(50vw + 550px);
   }
+  @include below(xl) {
+    left: auto;
+    right: -444px;
+  }
 }
 
 .header_new_year_left_top_2 {
