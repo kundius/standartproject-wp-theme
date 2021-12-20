@@ -361,6 +361,9 @@
       left: -156px;
       top: -99px;
     }
+    @include below(sm) {
+      left: -195px;
+    }
 }
 
 .header_new_year_right_top_1 {
@@ -381,6 +384,9 @@
     left: auto;
     right: -444px;
     top: -99px;
+  }
+  @include below(sm) {
+    right: -495px;
   }
 }
 
