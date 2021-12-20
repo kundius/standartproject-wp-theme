@@ -351,13 +351,13 @@
     pointer-events: none;
     background: url('../images/ng-left-top-2-red.png') no-repeat 50% 50%;
     background-size: contain;
-    @media (max-width: 2000px) {
+    @media (max-width: 1576px) {
       left: auto;
-      right: calc(50vw + 550px);
+      right: calc(50vw + 474px);
     }
     @include below(xl) {
       right: auto;
-      left: -444px;
+      left: -156px;
     }
 }
 
