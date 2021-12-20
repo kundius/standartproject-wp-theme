@@ -330,25 +330,33 @@
 .header_new_year_left_top_1 {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -83px;
     width: 297px;
     height: 600px;
     z-index: 10;
     pointer-events: none;
     background: url('../images/ng-left-top-2-red.png') no-repeat 50% 50%;
     background-size: contain;
+    @media (max-width: 1880px) {
+      left: -40px;
+    }
 }
 
 .header_new_year_right_top_1 {
   position: absolute;
-  left: 0;
-  top: 0;
+  right: -88px;
+  top: -83px;
   width: 529px;
   height: 600px;
   z-index: 10;
   pointer-events: none;
   background: url('../images/ng-right-top-2-red.png') no-repeat 50% 50%;
   background-size: contain;
+  @media (max-width: 1880px) {
+    // right: -340px;
+    right: auto;
+    left: 1360px;
+  }
 }
 
 .header_new_year_left_top_2 {
