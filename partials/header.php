@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header<?php if (is_new_year()): ?> header_new-year<?php endif; ?>">
   <?php if (is_new_year()): ?>
     <div class="header_new_year_left_top_1"></div>
     <div class="header_new_year_right_top_1"></div>

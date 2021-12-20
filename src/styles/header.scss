@@ -1,6 +1,7 @@
 .header {
-  position: sticky;
+  position: relative;
   top: 0;
+  width: 100%;
   z-index: 200;
   background: #ffffff;
   transition: .3s ease;
@@ -13,6 +14,13 @@
   }
   &_fixed {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+  }
+  &_new-year {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    .page-home & {
+      background: #ffffff;
+    }
   }
 }
 
