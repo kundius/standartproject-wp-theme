@@ -35,6 +35,7 @@ $list_items = array_slice($query->posts, $latest_count);
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
+    <div class="wrapper">
     <?php get_template_part('partials/header'); ?>
 
     <section class="page-section">
@@ -97,5 +98,6 @@ $list_items = array_slice($query->posts, $latest_count);
     </section>
 
     <?php get_template_part('partials/footer'); ?>
+    </div>
   </body>
 </html>

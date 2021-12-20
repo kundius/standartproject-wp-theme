@@ -19,6 +19,7 @@ $see_also = new wp_query($args);
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
+    <div class="wrapper">
     <?php get_template_part('partials/header'); ?>
 
     <main class="main">
@@ -99,5 +100,6 @@ $see_also = new wp_query($args);
     </main>
 
     <?php get_template_part('partials/footer'); ?>
+    </div>
   </body>
 </html>
