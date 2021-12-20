@@ -40,10 +40,10 @@ add_action('init','add_cors_http_header');
 function is_new_year()
 {
   if (date('m') === '12' && date('d') >= '20') {
-    return true
+    return true;
   }
   if (date('m') === '01' && date('d') <= '10') {
-    return true
+    return true;
   }
-  return false
+  return false;
 }
