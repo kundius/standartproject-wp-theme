@@ -326,3 +326,31 @@
 .header-nav > ul > .menu-item > ul > .menu-item > a:hover {
   color: rgb(255, 64, 64);
 }
+
+.header_new_year_left_top_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 297px;
+    height: 600px;
+    z-index: 10;
+    pointer-events: none;
+    background: url('../images/ng-left-top-2-red.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.header_new_year_right_top_1 {
+
+}
+
+.header_new_year_left_top_2 {
+
+}
+
+.header_new_year_right_top_2 {
+
+}
+
+.header_new_year_middle_top_1 {
+
+}

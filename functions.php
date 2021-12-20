@@ -36,3 +36,14 @@ function add_cors_http_header(){
     header("Access-Control-Allow-Origin: *");
 }
 add_action('init','add_cors_http_header');
+
+function is_new_year()
+{
+  if (date('m') === '12' && date('d') >= '20') {
+    return true
+  }
+  if (date('m') === '01' && date('d') <= '10') {
+    return true
+  }
+  return false
+}

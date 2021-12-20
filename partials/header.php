@@ -1,5 +1,14 @@
 <header class="header">
+  <?php if is_new_year()): ?>
+    <div class="header_new_year_left_top_1"></div>
+    <div class="header_new_year_right_top_1"></div>
+  <?php endif; ?>
   <div class="ui-container header__container">
+    <?php if is_new_year()): ?>
+      <div class="header_new_year_left_top_2"></div>
+      <div class="header_new_year_right_top_2"></div>
+      <div class="header_new_year_middle_top_1"></div>
+    <?php endif; ?>
 
     <div class="drawer js-drawer">
       <div class="drawer-screen drawer-screen_opened" data-parent="root">
