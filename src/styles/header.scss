@@ -129,6 +129,7 @@
   display: flex;
   align-items: center;
   min-height: 80px;
+  position: relative;
   @include below(xl) {
     min-height: 64px;
   }
@@ -358,6 +359,7 @@
     @include below(xl) {
       right: auto;
       left: -156px;
+      top: -99px;
     }
 }
 
@@ -378,6 +380,7 @@
   @include below(xl) {
     left: auto;
     right: -444px;
+    top: -99px;
   }
 }
 
@@ -401,9 +404,10 @@
 
 .header_new_year_middle_top_1 {
   background: url('../images/ng-middle-top-1.png') no-repeat;
-  width: 133px;
   height: 42px;
   position: absolute;
+  left: 50%;
   top: 0;
-  right: 192px;
+  width: 133px;
+  transform: translateX(-50%);
 }
