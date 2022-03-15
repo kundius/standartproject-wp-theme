@@ -44,7 +44,7 @@ Template Name: Контакты
             </div>
           </div>
   
-          <div class="page-content content">
+          <div class="page-content content" style="margin-top: 60px;">
             <?php the_content() ?>
           </div>
         </div>
