@@ -17,10 +17,6 @@ Template Name: Контакты
         <div class="ui-container">
           <h1 class="page-title"><?php the_title() ?></h1>
   
-          <div class="page-content content">
-            <?php the_content() ?>
-          </div>
-  
           <div class="grid sm:grid-cols-2 gap-12">
             <div>
               <p class="text-2xl">
@@ -46,6 +42,10 @@ Template Name: Контакты
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabf0b35e85e48a2735143faa474926a0af457d531e25aa9aafb2c24cc71a3268&width=100%&height=400&lang=ru_RU&scroll=true"></script>
               </div>
             </div>
+          </div>
+  
+          <div class="page-content content">
+            <?php the_content() ?>
           </div>
         </div>
       </section>
