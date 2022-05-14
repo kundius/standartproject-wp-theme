@@ -43,10 +43,12 @@
 
 .services-item__title a {
   font-size: 27px;
-  line-height: 1.25;
   font-weight: 600;
-  letter-spacing: 0.025em;
-  padding-right: 20%;
+  letter-spacing: .025em;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0 20% 0 0;
+  display: block;
   &::before {
     content: '';
     position: absolute;
