@@ -29,7 +29,6 @@
   opacity: 0.8;
   transition: opacity .3s ease;
   display: block;
-  margin-bottom: 60px;
   margin-left: 30px;
   img {
     width: 100%;
@@ -40,28 +39,22 @@
 
 .services-item__title {
   margin: 0;
-  margin: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 .services-item__title a {
   font-size: 27px;
   line-height: 1.25;
   font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: absolute;
   letter-spacing: 0.025em;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
   padding-right: 20%;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
   &::after {
     content: '';
     display: block;
