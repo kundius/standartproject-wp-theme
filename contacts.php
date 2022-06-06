@@ -49,7 +49,7 @@ Template Name: Контакты
               </div>
               <div class="text-3xl font-semibold mt-8">Тверь</div>
               <p class="mt-4">
-                ул.Софьи Перовской, 6
+                170006, ул. Софьи Перовской, 6
               </p>
               <div class="mt-8">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6b1ef86ae02840bf475aa5b9e770b0568e17a21e436e15291e1667e1e59baba&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
