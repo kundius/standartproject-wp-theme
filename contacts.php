@@ -36,7 +36,7 @@ Template Name: Контакты
               </div>
               <div class="text-3xl font-semibold mt-8">Воронеж</div>
               <p class="mt-4">
-                394007, ул. Порт-Артурская 11а, офис 8, 2 этаж
+                394007, ул. Порт-Артурская 11а
               </p>
               <div class="mt-8">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabf0b35e85e48a2735143faa474926a0af457d531e25aa9aafb2c24cc71a3268&width=100%&height=400&lang=ru_RU&scroll=true"></script>
