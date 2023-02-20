@@ -194,7 +194,7 @@ $news = new WP_Query([
         <section class="section-presscenter">
           <div class="section-presscenter__title">
             ПРЕСС ЦЕНТР
-            <a href="<?php echo esc_url(get_category_link(34)) ?>"></a>
+            <a href="<?php echo esc_url(get_category_link(31)) ?>"></a>
           </div>
           <div class="presscenter-list">
             <?php foreach ($news->posts as $item): ?>
