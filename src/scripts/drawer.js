@@ -1,57 +1,72 @@
-const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length )
+const menus = document.querySelectorAll('.drawer-menu') || []
 
-;(function() {
-  const drawer = document.querySelector('.js-drawer')
-  const toggle = document.querySelector('.js-drawer-toggle')
-  let opened = false
+menus.forEach(function (menu) {
+  const items = menu.querySelectorAll('.menu-item-has-children') || []
 
-  if (!drawer || !toggle) return
-
-  const outsideClickListener = e => {
-    if (!drawer.contains(e.target) && isVisible(drawer)) {
-      close()
+  items.forEach((item) => {
+    const close = () => {
+      item.classList.remove('menu-item-opened')
     }
-  }
 
-  const close = () => {
-    drawer.classList.remove('drawer_opened')
-    toggle.classList.remove('header__toggle_close')
-    document.removeEventListener('click', outsideClickListener)
-    opened = false
-  }
-
-  const open = () => {
-    drawer.classList.add('drawer_opened')
-    toggle.classList.add('header__toggle_close')
-    document.addEventListener('click', outsideClickListener)
-    opened = true
-  }
-
-  toggle.addEventListener('click', (e) => {
-    e.stopPropagation()
-    if (opened) {
-      close()
-    } else {
-      open()
+    const open = () => {
+      item.classList.add('menu-item-opened')
     }
+    
+    const toggle = () => {
+      if (item.classList.contains('menu-item-opened')) {
+        close()
+      } else {
+        open()
+      }
+    }
+
+    const link = item.querySelector('a')
+    const handler = document.createElement('span')
+    handler.classList.add('menu-toggle')
+    link.appendChild(handler)
+
+    handler.addEventListener('click', (e) => {
+      e.preventDefault()
+      e.stopPropagation()
+      toggle()
+    })
+
+    link.addEventListener('click', (e) => {
+      if (!item.classList.contains('menu-item-opened')) {
+        e.preventDefault()
+        open()
+      }
+    })
+  })
+})
+
+const drawers = document.querySelectorAll('.drawer') || []
+
+drawers.forEach(function (drawer) {
+  let timer
+  const openEl = document.querySelectorAll('.header__toggle') || []
+  const closeEl = document.querySelectorAll('.drawer__close, .drawer__overlay') || []
+
+  openEl.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault()
+      drawer.style.display = 'block'
+      setTimeout(() => {
+        drawer.classList.add('drawer_opened')
+      }, 0)
+    })
   })
 
-  const nextButtons = drawer.querySelectorAll('[data-next]')
-
-  for (let i = 0; i < nextButtons.length; i++) {
-    const arrow = nextButtons[i]
-    arrow.addEventListener('click', () => {
-      const drawerParents = drawer.querySelectorAll(`[data-parent]`)
-      if (drawerParents) {
-        for (let k = 0; k < drawerParents.length; k++) {
-          const drawerParent = drawerParents[k]
-          if (drawerParent.dataset.parent !== 'root') {
-            drawerParent.classList.remove('drawer-screen_opened')
-          }
-        }
+  closeEl.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault()
+      drawer.classList.remove('drawer_opened')
+      if (timer) {
+        clearTimeout(timer)
       }
-      drawer.querySelector(`[data-parent="${arrow.dataset.next}"]`).classList.add('drawer-screen_opened')
+      timer = setTimeout(() => {
+        drawer.style.display = 'none'
+      }, 500)
     })
-  }
-
-})()
+  })
+})

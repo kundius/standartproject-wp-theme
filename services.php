@@ -16,50 +16,48 @@ $services = new WP_Query([
   </head>
   <body>
     <div class="wrapper">
-    <?php get_template_part('partials/header'); ?>
+      <?php get_template_part('partials/header'); ?>
 
-    <main class="main">
-      <section class="page-section">
-        <div class="ui-container">
-          <h1 class="page-title"><?php the_title() ?></h1>
+      <section class="services">
+        <div class="container">
+          <h1 class="services__title"><?php the_title() ?></h1>
 
           <?php if ($services->have_posts()): ?>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-20">
+          <div class="services-list">
             <?php $index = 0; while ($services->have_posts()): $services->the_post(); $index++; ?>
               <div class="services-item">
-                <figure class="services-item__image">
-                  <?php if (has_post_thumbnail()): the_post_thumbnail($post->ID, 'medium'); endif; ?>
-                </figure>
                 <h3 class="services-item__title">
                   <a href="<?php the_permalink() ?>">
                     <?php the_title() ?>
                   </a>
                 </h3>
+                <div class="services-item__more">
+                  <div class="services-item__more-text">подробнее</div>
+                  <div class="services-item__more-arrow"></div>
+                </div>
               </div>
             <?php endwhile; ?>
           </div>
           <?php endif; wp_reset_query(); ?>
-        
-          <div class="page-content content">
+
+          <div class="services__important">
+            <div class="services-important">
+              <div class="services-important__image">
+                <img src="<?php bloginfo('template_url') ?>/dist/images/logo-pattern.svg" alt="">
+              </div>
+              <div class="services-important__table">
+                Мы можем предложить нашим клиентам и партнерам проектные решения, отвечающие самым высоким стандартам качества.
+              </div>
+            </div>
+          </div>
+
+          <div class="services__content">
             <?php the_content() ?>
           </div>
         </div>
       </section>
 
-      <section class="section-about">
-        <div class="ui-container">
-          <?php get_template_part('partials/short-about'); ?>
-        </div>
-      </section>
-
-      <section class="section-advantages">
-        <div class="ui-container">
-          <?php get_template_part('partials/advantages'); ?>
-        </div>
-      </section>
-    </main>
-
-    <?php get_template_part('partials/footer'); ?>
+      <?php get_template_part('partials/footer'); ?>
     </div>
   </body>
 </html>

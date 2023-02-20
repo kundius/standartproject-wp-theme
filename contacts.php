@@ -10,61 +10,76 @@ Template Name: Контакты
   </head>
   <body>
     <div class="wrapper">
-    <?php get_template_part('partials/header'); ?>
+      <?php get_template_part('partials/header'); ?>
 
-    <main class="main">
-      <section class="page-section">
-        <div class="ui-container">
-          <h1 class="page-title"><?php the_title() ?></h1>
-  
-          <div class="grid sm:grid-cols-3 gap-8">
-            <div>
-              <p class="text-2xl">
-                <a href="tel:+7 (499) 677-23-57">+7 (499) 677-23-57</a>
-              </p>
-              <div class="text-3xl font-semibold mt-8">Москва</div>
-              <p class="mt-4">
-                125080, Волоколамское шоссе, дом 1, строение 1
-              </p>
-              <div class="mt-8">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ea0fe3f239630579e6d9e290388821d258483c0c18b103375e6a6ef93c53e42&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="contacts__title">
+            <?php the_title() ?>
+          </h1>
+
+          <div class="contacts__table">
+            <div class="contacts-table">
+              <div class="contacts-table__phone">
+              <div class="contacts-table__phone-label">
+                Телефон:
               </div>
-            </div>
-            <div>
-              <div class="text-2xl">
-                <a href="tel:info@standartproject.ru">info@standartproject.ru</a>
+              <div class="contacts-table__phone-value">
+                <a href="tel:<?php the_field('phone', 'options') ?>"><?php the_field('phone', 'options') ?></a>
               </div>
-              <div class="text-3xl font-semibold mt-8">Воронеж</div>
-              <p class="mt-4">
-                394007, ул. Порт-Артурская 11а
-              </p>
-              <div class="mt-8">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aabf0b35e85e48a2735143faa474926a0af457d531e25aa9aafb2c24cc71a3268&width=100%&height=400&lang=ru_RU&scroll=true"></script>
               </div>
-            </div>
-            <div>
-              <div class="text-2xl">
-                
-                &nbsp;
+              <div class="contacts-table__divider">
+
               </div>
-              <div class="text-3xl font-semibold mt-8">Тверь</div>
-              <p class="mt-4">
-                170006, ул. Софьи Перовской, 6
-              </p>
-              <div class="mt-8">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6b1ef86ae02840bf475aa5b9e770b0568e17a21e436e15291e1667e1e59baba&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+              <div class="contacts-table__email">
+                <div class="contacts-table__email-label">
+                  Электронная почта:
+                </div>
+                <div class="contacts-table__email-value">
+                  <a href="mailto:<?php the_field('email', 'options') ?>"><?php the_field('email', 'options') ?></a>
+                </div>
               </div>
             </div>
           </div>
-  
-          <div class="page-content content" style="margin-top: 60px;">
-            <?php the_content() ?>
+
+          <?php if ($adresses = get_field('addresses', 'options')): ?>
+          <div class="contacts__title">
+            Филиалы
+          </div>
+
+          <div class="contacts__addresses">
+            <div class="contacts-addresses">
+              <div class="contacts-addresses__content">
+                <?php foreach ($adresses as $key => $address): ?>
+                <div class="contacts-addresses__content-item<?php if ($key === 0): echo ' _active'; endif; ?> contacts-addresses__control" data-index="<?php echo $key; ?>">
+                  <?php echo $address['content'] ?>
+                </div>
+                <?php endforeach; ?>
+              </div>
+              <div class="contacts-addresses__map">
+                <?php foreach ($adresses as $key => $address): ?>
+                <div class="contacts-addresses__map-item<?php if ($key === 0): echo ' _active'; endif; ?>" data-index="<?php echo $key; ?>">
+                  <?php echo $address['map'] ?>
+                  <?php if (!empty($adresses[$key - 1])): ?>
+                  <button type="button" class="contacts-addresses__prev contacts-addresses__control" data-index="<?php echo $key - 1; ?>"></button>
+                  <?php endif; ?>
+                  <?php if (!empty($adresses[$key + 1])): ?>
+                  <button type="button" class="contacts-addresses__next contacts-addresses__control" data-index="<?php echo $key + 1; ?>"></button>
+                  <?php endif; ?>
+                </div>
+                <?php endforeach; ?>
+              </div>
+            </div>
+          </div>
+          <?php endif; ?>
+
+          <div class="contacts__map">
+            <?php the_field('yamap', 'options') ?>
           </div>
         </div>
       </section>
-    </main>
 
-    <?php get_template_part('partials/footer'); ?>
+      <?php get_template_part('partials/footer'); ?>
     </div>
   </body>
 </html>
