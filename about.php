@@ -596,6 +596,7 @@ $projects_msk = get_field('projects_msk');
                   ЧЛЕН АССОЦИАЦИИ ИНДУСТРИАЛЬНЫХ ПАРКОВ РОССИИ
                 </div>
               </div>
+              
               <div class="about-indparks__desc">
                 Проектно-строительная компания «Стандарт»<br />
                 — это <span>новый стандарт качества</span><br />
