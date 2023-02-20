@@ -43,7 +43,7 @@ $news = new WP_Query([
             “ Мы создаем проекты, выходящие за рамки, новые форматы и нестандартные направления. ”
           </div>
           <div class="section-market-time__button">
-            <a href="#" class="button-primary">ПОДРОБНЕЕ О КОМПАНИИ</a>
+            <a href="<?php the_permalink(8) ?>" class="button-primary">ПОДРОБНЕЕ О КОМПАНИИ</a>
           </div>
         </div>
       </section>
@@ -76,7 +76,7 @@ $news = new WP_Query([
             Мы активно внедряем новые технологии на всех этапах взаимодействия с заказчиками, что позволяет нам выполнять поставленные задачи в оговоренные сроки и утвержденным бюджетом.
           </div>
           <div class="section-more-projects__button" data-aos="fade-right">
-            <a href="#" class="button-primary">ОТКРЫТЬ ПРОЕКТЫ</a>
+            <a href="<?php echo esc_url(get_category_link(14)) ?>" class="button-primary">ОТКРЫТЬ ПРОЕКТЫ</a>
           </div>
           <div class="section-more-projects__image">
             <img src="<?php bloginfo('template_url') ?>/dist/images/more-projects.jpg" alt="" data-aos="fade-left" />
@@ -96,7 +96,7 @@ $news = new WP_Query([
                 Команда с широкой компетенцией.
               </div>
               <div class="section-more-specialists__button" data-aos="fade-left">
-                <a href="#" class="button-primary">ПОДРОБНЕЕ О КОМАНДЕ</a>
+                <a href="<?php the_permalink(1065) ?>" class="button-primary">ПОДРОБНЕЕ О КОМАНДЕ</a>
               </div>
             </div>
             <div class="section-more-specialists__image-first" data-aos="fade-right">
