@@ -329,7 +329,7 @@ $projects_msk = get_field('projects_msk');
                       <?php foreach ($projects_rf as $index => $item): ?>
                       <g class="map-marker" data-index="<?php echo $index ?>">
                         <rect opacity="0.5" x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] ?>)" fill="#FF170A"/>
-                        <rect x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] - 6.101 ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] - 6.101 ?>)" fill="#FF170A"/>
+                        <rect x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] + 6.101 ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] + 6.101 ?>)" fill="#FF170A"/>
                       </g>
                       <?php endforeach; ?>
                       <!-- <g class="map-marker" data-index="1">
@@ -480,7 +480,7 @@ $projects_msk = get_field('projects_msk');
                       <?php foreach ($projects_msk as $index => $item): ?>
                       <g class="map-marker" data-index="<?php echo $index ?>">
                         <rect opacity="0.5" x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] ?>)" fill="#FF170A"/>
-                        <rect x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] - 6.101 ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] - 6.101 ?>)" fill="#FF170A"/>
+                        <rect x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] + 6.101 ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] + 6.101 ?>)" fill="#FF170A"/>
                       </g>
                       <?php endforeach; ?>
                       <!-- <rect opacity="0.5" x="415.864" y="228.101" width="16.7775" height="16.7775" transform="rotate(45 415.864 228.101)" fill="#FF170A"/>
