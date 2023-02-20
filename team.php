@@ -60,9 +60,11 @@ Template Name: Команда
                         <div class="leadership-item__content">
                           <?php echo $item['content'] ?>
                         </div>
+                        <?php if (!empty($item['content'])): ?>
                         <button class="leadership-item__show">
                           ОБРАЩЕНИЕ К КЛИЕНТАМ
                         </button>
+                        <?php endif; ?>
                       </div>
                       <div class="leadership-item__name">
                         <?php echo $item['name'] ?>
