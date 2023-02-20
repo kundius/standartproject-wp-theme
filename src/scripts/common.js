@@ -51,6 +51,8 @@ const leadershipItems = document.querySelectorAll('.leadership-item') || [];
 leadershipItems.forEach(function (leadershipItem) {
   const show = leadershipItem.querySelector('.leadership-item__show');
 
+  if (!show) return
+
   let opened = 0;
 
   show.addEventListener('click', (e) => {

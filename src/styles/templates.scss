@@ -3487,7 +3487,10 @@
 }
 
 .leadership-list__item:nth-child(2) {
-  order: -1;
+
+  @include below(sm) {
+    order: -1;
+  }
 }
 
 .team__leadership {
