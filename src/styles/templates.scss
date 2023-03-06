@@ -1592,13 +1592,12 @@
 .geography-card__desc {
   font-size: 14px;
   line-height: 150%;
-  text-transform: uppercase;
   color: #4d4c4c;
-  margin-bottom: 16px;
+  margin-top: 16px;
 
   @include below(md) {
     font-size: calc(14px * 0.8);
-    margin-bottom: calc(16px * 0.8);
+    margin-top: calc(16px * 0.8);
   }
 }
 
@@ -1673,14 +1672,18 @@
   opacity: 1;
 }
 
+.map-marker {
+  cursor: pointer;
+}
+
 .geography-map__content {
   position: fixed;
   visibility: hidden;
   z-index: 100;
-  width: 412px;
+  // width: 412px;
 
   @include below(md) {
-    width: calc(412px * 0.8);
+    // width: calc(412px * 0.8);
   }
   @include below(sm) {
     left: 0;
