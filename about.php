@@ -116,45 +116,27 @@ $projects_msk = get_field('projects_msk');
                     <?php foreach ($projects_rf as $index => $item): ?>
                     <div class="geography-map__content" data-index="rf-<?php echo $index ?>">
                       <div class="geography-card">
+                        <?php if (!empty($item['desc'])): ?>
                         <div class="geography-card__desc">
                           <?php echo $item['desc'] ?>
                         </div>
+                        <?php endif; ?>
+                        <?php if (!empty($item['image'])): ?>
                         <div class="geography-card__image">
                           <a href="<?php echo $item['link']['url'] ?>">
                             <img src="<?php echo $item['image']['url'] ?>" alt="">
                           </a>
                         </div>
+                        <?php endif; ?>
+                        <?php if (!empty($item['name'])): ?>
                         <a href="<?php echo $item['link']['url'] ?>" class="geography-card__title">
                           <?php echo $item['name'] ?>
                           <span></span>
                         </a>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <?php endforeach; ?>
-                    <!-- <div class="geography-map__content" data-index="2">
-                      2
-                    </div>
-                    <div class="geography-map__content" data-index="3">
-                      3
-                    </div>
-                    <div class="geography-map__content" data-index="4">
-                      4
-                    </div>
-                    <div class="geography-map__content" data-index="5">
-                      5
-                    </div>
-                    <div class="geography-map__content" data-index="6">
-                      6
-                    </div>
-                    <div class="geography-map__content" data-index="7">
-                      7
-                    </div>
-                    <div class="geography-map__content" data-index="8">
-                      8
-                    </div>
-                    <div class="geography-map__content" data-index="9">
-                      9
-                    </div> -->
                     <div class="geography-map__figure">
                       <svg width="1180" viewBox="0 0 1180 666" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g opacity="0.4">
@@ -311,7 +293,7 @@ $projects_msk = get_field('projects_msk');
                           <path d="M28.0036 367.286L32.0685 362.543L22.9229 350.519L28.3426 335.108L24.4473 331.891L21.0602 334.262L7.68108 325.116L5.98811 327.825L6.49566 338.664L1.41504 344.083L2.77022 351.536L11.5768 351.028L21.3992 363.391L28.0036 367.286Z" fill="#B9B9B9"/>
                         </g>
                         <?php foreach ($projects_rf as $index => $item): ?>
-                        <g class="map-marker" data-index="rf-<?php echo $index ?>">
+                        <g class="map-marker" data-index="rf-<?php echo $index ?>" style="transform: translateY(-15px);">
                           <rect opacity="0.5" x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] ?>)" fill="#FF170A"/>
                           <rect x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] + 6.101 ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] + 6.101 ?>)" fill="#FF170A"/>
                         </g>
@@ -328,18 +310,24 @@ $projects_msk = get_field('projects_msk');
                     <?php foreach ($projects_msk as $index => $item): ?>
                     <div class="geography-map__content" data-index="msk-<?php echo $index ?>">
                       <div class="geography-card">
+                        <?php if (!empty($item['desc'])): ?>
                         <div class="geography-card__desc">
                           <?php echo $item['desc'] ?>
                         </div>
+                        <?php endif; ?>
+                        <?php if (!empty($item['image'])): ?>
                         <div class="geography-card__image">
                           <a href="<?php echo $item['link']['url'] ?>">
                             <img src="<?php echo $item['image']['url'] ?>" alt="">
                           </a>
                         </div>
+                        <?php endif; ?>
+                        <?php if (!empty($item['name'])): ?>
                         <a href="<?php echo $item['link']['url'] ?>" class="geography-card__title">
                           <?php echo $item['name'] ?>
                           <span></span>
                         </a>
+                        <?php endif; ?>
                       </div>
                     </div>
                     <?php endforeach; ?>
@@ -426,7 +414,7 @@ $projects_msk = get_field('projects_msk');
                       <path d="M429.528 336.549L429.851 337.489V337.812L427.035 337.959L425.304 338.224L424.101 336.167L427.005 334.55L428.531 335.05L429.381 335.226L429.528 336.549Z" fill="#E8E8E7"/>
 
                       <?php foreach ($projects_msk as $index => $item): ?>
-                      <g class="map-marker" data-index="msk-<?php echo $index ?>">
+                      <g class="map-marker" data-index="msk-<?php echo $index ?>" style="transform: translateY(-15px);">
                         <rect opacity="0.5" x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] ?>)" fill="#FF170A"/>
                         <rect x="<?php echo $item['coords']['x'] ?>" y="<?php echo $item['coords']['y'] + 6.101 ?>" width="16.7775" height="16.7775" transform="rotate(45 <?php echo $item['coords']['x'] ?> <?php echo $item['coords']['y'] + 6.101 ?>)" fill="#FF170A"/>
                       </g>
