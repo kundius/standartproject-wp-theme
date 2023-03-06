@@ -116,11 +116,6 @@ $projects_msk = get_field('projects_msk');
                   <?php foreach ($projects_rf as $index => $item): ?>
                   <div class="geography-map__content" data-index="rf-<?php echo $index ?>">
                     <div class="geography-card">
-                      <?php if (!empty($item['desc'])): ?>
-                      <div class="geography-card__desc">
-                        <?php echo $item['desc'] ?>
-                      </div>
-                      <?php endif; ?>
                       <?php if (!empty($item['image'])): ?>
                       <div class="geography-card__image">
                         <?php if (!empty($item['link'])): ?>
@@ -143,6 +138,11 @@ $projects_msk = get_field('projects_msk');
                         <?php echo $item['name'] ?>
                       </div>
                       <?php endif; ?>
+                      <?php endif; ?>
+                      <?php if (!empty($item['desc'])): ?>
+                      <div class="geography-card__desc">
+                        <?php echo $item['desc'] ?>
+                      </div>
                       <?php endif; ?>
                     </div>
                   </div>
@@ -320,11 +320,6 @@ $projects_msk = get_field('projects_msk');
                   <?php foreach ($projects_msk as $index => $item): ?>
                   <div class="geography-map__content" data-index="msk-<?php echo $index ?>">
                     <div class="geography-card">
-                      <?php if (!empty($item['desc'])): ?>
-                      <div class="geography-card__desc">
-                        <?php echo $item['desc'] ?>
-                      </div>
-                      <?php endif; ?>
                       <?php if (!empty($item['image'])): ?>
                       <div class="geography-card__image">
                         <?php if (!empty($item['link'])): ?>
@@ -347,6 +342,11 @@ $projects_msk = get_field('projects_msk');
                         <?php echo $item['name'] ?>
                       </div>
                       <?php endif; ?>
+                      <?php endif; ?>
+                      <?php if (!empty($item['desc'])): ?>
+                      <div class="geography-card__desc">
+                        <?php echo $item['desc'] ?>
+                      </div>
                       <?php endif; ?>
                     </div>
                   </div>
