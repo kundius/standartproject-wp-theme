@@ -52,7 +52,7 @@
       <div class="footer-secondary__layout">
         <div class="footer-secondary__layout-copyright">
           <div class="footer-secondary__copyright">
-            © 2022 Проектно-строительная компания «Стандарт». Все права защищены.
+            <?php the_field('copyright', 'options') ?>
           </div>
         </div>
         <div class="footer-secondary__layout-rules">

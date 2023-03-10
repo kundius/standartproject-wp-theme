@@ -272,13 +272,13 @@
 
 .section-more-projects__image::after {
   content: "";
-  height: 259px;
-  width: 426px;
+  height: 200px;
+  width: 326px;
   display: block;
   position: absolute;
   z-index: 1;
   bottom: -56px;
-  left: -300px;
+  left: -360px;
   background: url("../images/logo-pattern.svg") no-repeat 50% 50%;
   background-size: contain;
 
@@ -1430,8 +1430,8 @@
 
 .about-mission__image::after {
   content: "";
-  height: 259px;
-  width: 426px;
+  height: 200px;
+  width: 326px;
   position: absolute;
   z-index: 1;
   right: -380px;
