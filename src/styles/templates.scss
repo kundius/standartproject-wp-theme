@@ -1928,6 +1928,72 @@
   }
 }
 
+.page-section {
+  padding: 80px 0 92px;
+
+  @include below(md) {
+    padding: calc(80px * 0.8) 0 calc(92px * 0.8);
+  }
+  @include below(sm) {
+    padding: 34px 0 80px;
+  }
+}
+
+.page-section__title {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenGost Type B TT";
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 103px;
+
+  @include below(md) {
+    font-size: calc(64px * 0.8);
+    margin-bottom: calc(103px * 0.8);
+  }
+  @include below(sm) {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 73px;
+  }
+}
+
+.page-section__content {
+  margin-top: 127px;
+  font-size: 30px;
+  line-height: 160%;
+  color: #4d4c4c;
+
+  @include below(md) {
+    margin-top: calc(127px * 0.8);
+    font-size: calc(30px * 0.8);
+  }
+  @include below(sm) {
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+  }
+}
+
+.page-section__content p {
+  margin: 0;
+}
+
+.page-section__content p + p {
+  margin-top: 24px;
+
+  @include below(md) {
+    margin-top: calc(24px * 0.8);
+  }
+}
+
 .services {
   padding: 80px 0 92px;
 
