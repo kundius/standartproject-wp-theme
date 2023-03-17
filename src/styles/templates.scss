@@ -1964,36 +1964,6 @@
   }
 }
 
-.page-section__content {
-  margin-top: 127px;
-  font-size: 30px;
-  line-height: 160%;
-  color: #4d4c4c;
-
-  @include below(md) {
-    margin-top: calc(127px * 0.8);
-    font-size: calc(30px * 0.8);
-  }
-  @include below(sm) {
-    font-size: 14px;
-    line-height: 140%;
-    color: rgba(0, 0, 0, 0.6);
-    margin-top: 20px;
-  }
-}
-
-.page-section__content p {
-  margin: 0;
-}
-
-.page-section__content p + p {
-  margin-top: 24px;
-
-  @include below(md) {
-    margin-top: calc(24px * 0.8);
-  }
-}
-
 .services {
   padding: 80px 0 92px;
 
