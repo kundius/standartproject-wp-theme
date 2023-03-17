@@ -44,7 +44,7 @@ Template Name: Контакты
 
           <?php if ($adresses = get_field('addresses', 'options')): ?>
           <div class="contacts__title">
-            Филиалы
+            Представительство
           </div>
 
           <div class="contacts__addresses">

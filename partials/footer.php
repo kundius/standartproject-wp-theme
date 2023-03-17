@@ -5,7 +5,7 @@
         <div class="footer-layout__address">
           <div class="footer-address">
             <div class="footer-address__title">
-              НАШИ ФИЛИАЛЫ
+              Наши представительства
             </div>
             <div class="footer-address__content">
               <?php if ($adresses = get_field('addresses', 'options')): ?>

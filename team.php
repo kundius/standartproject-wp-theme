@@ -38,7 +38,7 @@ Template Name: Команда
                   <?php endforeach; ?>
                 </div>
               </div>
-              <div class="carousel__next team-swiper-next"></div>
+              <div class="carousel__next team-swiper-prev"></div>
               <div class="carousel__prev team-swiper-next"></div>
             </div>
           </div>
