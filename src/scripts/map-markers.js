@@ -19,12 +19,13 @@ const show = (index) => {
   overlay.classList.add('_visible')
 
   if (window.matchMedia('(min-width: 640px)').matches) {
-    const bounding = marker.getBoundingClientRect()
-    content.style.left = `${bounding.left}px`
-    content.style.top = `${bounding.top}px`
+    const markerBounding = marker.getBoundingClientRect()
+    const parentBounding = content.parentNode.getBoundingClientRect()
+    content.style.left = `${markerBounding.left - parentBounding.left}px`
+    content.style.top = `${markerBounding.top - parentBounding.top}px`
   }
 
-  window.addEventListener('scroll', onScroll)
+  // window.addEventListener('scroll', onScroll)
   document.addEventListener('mouseup', onMouseUp)
 }
 
@@ -32,13 +33,13 @@ const close = (index) => {
   const content = document.querySelector(`.geography-map__content[data-index="${index}"]`)
   content.classList.remove('_visible')
   overlay.classList.remove('_visible')
-  window.removeEventListener('scroll', onScroll)
+  // window.removeEventListener('scroll', onScroll)
   document.removeEventListener('mouseup', onMouseUp)
 }
 
-const onScroll = () => {
-  close(active)
-}
+// const onScroll = () => {
+//   close(active)
+// }
 
 const onMouseUp = (e) => {
   const content = document.querySelector(`.geography-map__content[data-index="${active}"]`)
