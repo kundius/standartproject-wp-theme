@@ -231,3 +231,99 @@
 .header__nav .menu .menu-item .sub-menu {
   display: none;
 }
+
+.banner-section {}
+
+.banner {
+  border: 3px solid #FF170A;
+  padding-right: 95px;
+  position: relative;
+}
+
+.banner__close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  right: 5px;
+  top: 5px;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.banner__close::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  height: 2px;
+  width: 30px;
+  background: #4D4C4C;
+}
+
+.banner__close::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 2px;
+  width: 30px;
+  background: #4D4C4C;
+}
+
+.banner__headline {
+  display: flex;
+  align-items: center;
+}
+
+.banner__date {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FF170A;
+  height: 99px;
+  width: 167px;
+}
+
+.banner__desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #4D4C4C;
+}
+
+.banner__logos {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.banner__logo {
+
+}
+
+.banner__logo img {
+  display: block;
+}
+
+.banner__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.banner__title {
+  font-family: "OpenGost Type B TT";
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.banner__title span {
+  color: #4D4C4C;
+}
