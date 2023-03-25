@@ -232,7 +232,13 @@
   display: none;
 }
 
-.banner-section {}
+.banner-section {
+  display: none;
+}
+
+.banner-section_visible {
+  display: block;
+}
 
 .banner {
   border: 3px solid #FF170A;
@@ -250,6 +256,7 @@
   border: none;
   padding: 0;
   background: 0 0;
+  cursor: pointer;
 }
 
 .banner__close::before {

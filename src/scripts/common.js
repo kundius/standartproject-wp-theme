@@ -1,8 +1,22 @@
 import AOS from 'aos'
+import Cookies from 'js-cookie'
 
 import { modal } from './modal'
 
 AOS.init()
+
+const bannerSection = document.querySelector('.banner-section');
+const bannerClose = document.querySelector('.banner__close');
+
+if (bannerSection && bannerClose) {
+  if (!Cookies.get('banner-hidden')) {
+    bannerSection.classList.add('banner-section_visible')
+  }
+  bannerClose.addEventListener('click', () => {
+    bannerSection.classList.remove('banner-section_visible')
+    Cookies.set('banner-hidden', 'hidden')
+  })
+}
 
 const callbackOrModalItems = document.querySelectorAll('.js-callback-or-modal') || [];
 callbackOrModalItems.forEach(function (item) {
