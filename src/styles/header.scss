@@ -236,6 +236,7 @@
 
 .banner {
   border: 3px solid #FF170A;
+  border-top: 0;
   padding-right: 95px;
   position: relative;
 }
@@ -276,6 +277,8 @@
 .banner__headline {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .banner__date {
