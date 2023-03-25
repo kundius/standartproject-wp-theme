@@ -14,10 +14,10 @@
         </div>
         <div class="banner__logos">
           <div class="banner__logo">
-            <img src="" alt="<?php bloginfo('template_url') ?>/dist/images/skladtech.png">
+            <img src="<?php bloginfo('template_url') ?>/dist/images/skladtech.png" alt="">
           </div>
           <div class="banner__logo">
-            <img src="" alt="<?php bloginfo('template_url') ?>/dist/images/transrussia.png">
+            <img src="<?php bloginfo('template_url') ?>/dist/images/transrussia.png" alt="">
           </div>
         </div>
       </div>
