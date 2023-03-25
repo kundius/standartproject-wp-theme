@@ -339,3 +339,92 @@
 .banner__title span {
   color: #4D4C4C;
 }
+
+.banner-modal {
+  padding: 50px;
+}
+
+.banner-modal__title {
+  font-family: 'OpenGost Type B TT';
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.banner-modal__title span {
+  color: #FF170A;
+}
+
+.banner-modal__desc {
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.banner-modal__desc span {
+  color: #FF170A;
+}
+
+.banner-modal__desc p {
+  margin: 0;
+}
+
+.banner-modal__desc p + p {
+  margin-top: 20px;
+}
+
+.banner-modal__red {
+  background: #FF170A;
+  padding-bottom: 28px;
+  padding-top: 28px;
+  margin-left: -50px;
+  margin-right: -50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.banner-modal__red-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+.banner-modal__red-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner-modal__button {
+  margin: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-modal__code {
+  font-size: 14px;
+  line-height: 150%;
+  color: #4D4C4C;
+}
+
+.banner-modal__code span {
+  color: #FF170A;
+}
+
+.banner-modal__code p {
+  margin: 0;
+}
+
+.banner-modal__code p + p {
+  margin-top: 20px;
+}
