@@ -25,11 +25,20 @@
         <div class="banner__title">
           Будем рады встрече на выставке <span>TransRussia 2023!</span>
         </div>
-        <a href="#" class="button-primary">ПОДРОБНЕЕ</a>
+        <button class="button-primary" data-hystmodal="#bannerModal">ПОДРОБНЕЕ</button>
       </div>
     </div>
   </div>
 </section>
+
+<div class="hystmodal" id="bannerModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Закрыть</button>
+            bannerModal
+        </div>
+    </div>
+</div>
 
 <section class="header">
   <div class="container header__container">
