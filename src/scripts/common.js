@@ -14,7 +14,7 @@ if (bannerSection && bannerClose) {
   }
   bannerClose.addEventListener('click', () => {
     bannerSection.classList.remove('banner-section_visible')
-    Cookies.set('banner-hidden', 'hidden')
+    Cookies.set('banner-hidden', 'hidden', { expires: 1 })
   })
 }
 
