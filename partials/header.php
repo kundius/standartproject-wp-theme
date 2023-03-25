@@ -49,7 +49,7 @@
         </div>
         <div class="banner-modal__red">
           <div class="banner-modal__red-title">
-            Наш номер стенда: <span>A3055</span> | Павильон: <span>1</span> |  Зал: <span>1</span>
+            Наш номер стенда: <span>A3055</span> <span>|</span> Павильон: <span>1</span> <span>|</span> Зал: <span>1</span>
           </div>
           <div class="banner-modal__red-images">
             <svg width="138" height="217" viewBox="0 0 138 217" fill="none" xmlns="http://www.w3.org/2000/svg">
