@@ -34,7 +34,7 @@
 <div class="hystmodal" id="bannerModal" aria-hidden="true">
   <div class="hystmodal__wrap">
     <div class="hystmodal__window" role="dialog" aria-modal="true">
-      <button data-hystclose class="hystmodal__close">Закрыть</button>
+      <button data-hystclose class="hystmodal__close"></button>
       <div class="banner-modal">
         <div class="banner-modal__title">
           ПРИГЛАШЕНИЕ НА ВЫСТАВКУ <span>TRANSRUSSIA 2023</span>
