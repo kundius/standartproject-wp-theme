@@ -275,7 +275,7 @@
           </div>
         </div>
         <div class="banner-modal__button">
-          <a href="#" class="button-primary">ПОЛУЧИТЬ БИЛЕТ</a>
+          <a href="https://transrussia.ru/" class="button-primary" target="_blank">ПОЛУЧИТЬ БИЛЕТ</a>
         </div>
         <div class="banner-modal__code">
           <p>
