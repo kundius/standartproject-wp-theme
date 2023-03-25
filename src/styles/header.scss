@@ -274,6 +274,14 @@
   background: #4D4C4C;
 }
 
+.banner__close:hover::before {
+  background: #000;
+}
+
+.banner__close:hover::after {
+  background: #000;
+}
+
 .banner__headline {
   display: flex;
   align-items: center;

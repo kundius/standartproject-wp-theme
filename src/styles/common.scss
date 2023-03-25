@@ -326,6 +326,14 @@ img {
   background: #4D4C4C;
 }
 
+.hystmodal__close:hover::before {
+  background: #000;
+}
+
+.hystmodal__close:hover::after {
+  background: #000;
+}
+
 // .hystmodal__close {
 //   position: absolute;
 //   z-index: 10;
