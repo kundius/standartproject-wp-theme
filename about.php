@@ -33,7 +33,7 @@ $projects_msk = get_field('projects_msk');
       <div class="container">
         <div class="about__title">
           <div class="about-title">
-            <div class="about-title__item about-title__item_red"><span>Новое виденье</span></div>
+            <div class="about-title__item about-title__item_red"><span>Новая философия</span></div>
             <div class="about-title__item"><span>Промышленного</span></div>
             <div class="about-title__item"><span>Проектирования</span></div>
           </div>
@@ -43,14 +43,20 @@ $projects_msk = get_field('projects_msk');
           <div class="about-directions">
             <div class="about-directions__list">
               <ul>
-                <li>Склады;</li>
-                <li>Логистические комплексы;</li>
-                <li>Оптово-распределительные комплексы;</li>
-                <li>Заводы;</li>
-                <li>Торговые центры (ТЦ);</li>
-                <li>Офисы;</li>
-                <li>Административные здания;</li>
-                <li>Овощехранилища.</li>
+                <li>Складские и логистические комплексы;</li>
+                <li>Производственные комплексы;</li>
+                <li>Торгово-развлекательные комплексы;</li>
+                <li>Оптово-распределительные центры;</li>
+                <li>Физкультурно-оздоровительные комплексы;</li>
+                <li>Мусоросортировочные комплексы;</li>
+                <li>Полигоны бытовых отходов;</li>
+                <li>Зернохранилища;</li>
+                <li>Овощехранилища;</li>
+                <li>Птицефабрики;</li>
+                <li>Таможенные терминалы;</li>
+                <li>Контейнерные терминалы;</li>
+                <li>Заводы и сборочные цеха;</li>
+                <li>Инженерные здания и сооружения.</li>
               </ul>
             </div>
             <div class="about-directions__table">
