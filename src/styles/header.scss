@@ -257,6 +257,10 @@
     padding-right: 20px;
     padding-bottom: 16px;
   }
+  @include below(sm) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
 }
 
 .banner__close {
@@ -446,6 +450,10 @@
 
 .banner-modal {
   padding: 50px;
+
+  @include below(md) {
+    padding: 16px;
+  }
 }
 
 .banner-modal__title {
@@ -455,6 +463,13 @@
   color: #000000;
   text-align: center;
   margin-bottom: 50px;
+
+  @include below(md) {
+    line-height: 150%;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 .banner-modal__title span {
@@ -467,6 +482,12 @@
   text-align: center;
   color: #000000;
   margin-bottom: 28px;
+
+  @include below(md) {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 }
 
 .banner-modal__desc span {
@@ -490,18 +511,24 @@
   margin-right: -50px;
   padding-left: 50px;
   padding-right: 50px;
+
+  @include below(md) {
+    padding-top: 20px;
+  }
 }
 
 .banner-modal__red-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 45px;
+
+  @include below(md) {
+    line-height: 46px;
+    margin-bottom: 18px;
+  }
 }
 
 .banner-modal__red-title span {
@@ -513,6 +540,7 @@
 .banner-modal__red-images {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .banner-modal__button {
@@ -520,6 +548,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include below(md) {
+    margin: 22px 0;
+  }
 }
 
 .banner-modal__code {
