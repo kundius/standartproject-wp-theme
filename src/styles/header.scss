@@ -2,10 +2,8 @@
 
 .header {
   @include below(sm) {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
     background: #fff;
     z-index: 80;
     transition: all .3s ease;
@@ -18,11 +16,11 @@
   }
 }
 
-.header-placeholder {
-  @include below(sm) {
-    height: 64px;
-  }
-}
+// .header-placeholder {
+//   @include below(sm) {
+//     height: 64px;
+//   }
+// }
 
 .header__container {
   display: flex;
@@ -245,6 +243,10 @@
   border-top: 0;
   padding-right: 95px;
   position: relative;
+  
+  @include below(lg) {
+    padding-right: 60px;
+  }
 }
 
 .banner__close {
@@ -294,6 +296,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 46px;
+  
+  @include below(lg) {
+    gap: 20px;
+  }
 }
 
 .banner__date {
@@ -325,6 +331,10 @@
   display: flex;
   gap: 46px;
   align-items: center;
+  
+  @include below(lg) {
+    gap: 20px;
+  }
 }
 
 .banner__logo {
