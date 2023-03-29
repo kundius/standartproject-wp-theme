@@ -23,7 +23,9 @@
         <div class="banner__title">
           Будем рады встрече на выставке <span>TransRussia 2023!</span>
         </div>
-        <button class="button-primary" data-hystmodal="#bannerModal">ПОДРОБНЕЕ</button>
+        <div class="banner__button">
+          <button class="button-primary" data-hystmodal="#bannerModal">ПОДРОБНЕЕ</button>
+        </div>
       </div>
     </div>
   </div>

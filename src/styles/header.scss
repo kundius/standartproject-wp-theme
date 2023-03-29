@@ -336,6 +336,7 @@
     font-size: 14px;
     width: calc(100% + 40px);
     height: auto;
+    order: 1;
     br {
       display: none;
     }
@@ -362,6 +363,9 @@
   
   @include below(lg) {
     gap: 20px;
+  }
+  @include below(md) {
+    order: 3;
   }
 }
 
@@ -392,11 +396,22 @@
     font-size: 24px;
     text-align: center;
     width: 100%;
+    order: 2;
   }
 }
 
 .banner__title span {
-  color: #4D4C4C;
+  color: #FF170A;
+}
+
+.banner__button {
+  
+  @include below(md) {
+    order: 4;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .banner-modal {
