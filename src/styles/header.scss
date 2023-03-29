@@ -255,6 +255,7 @@
     border-left: none;
     border-right: none;
     padding-right: 20px;
+    padding-bottom: 16px;
   }
 }
 
@@ -268,6 +269,13 @@
   padding: 0;
   background: 0 0;
   cursor: pointer;
+
+  @include below(md) {
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: 0px;
+  }
 }
 
 .banner__close::before {
@@ -279,6 +287,10 @@
   height: 2px;
   width: 24px;
   background: #4D4C4C;
+
+  @include below(md) {
+    background: #fff;
+  }
 }
 
 .banner__close::after {
@@ -290,14 +302,26 @@
   height: 2px;
   width: 24px;
   background: #4D4C4C;
+
+  @include below(md) {
+    background: #fff;
+  }
 }
 
 .banner__close:hover::before {
   background: #000;
+
+  @include below(md) {
+    background: #fff;
+  }
 }
 
 .banner__close:hover::after {
   background: #000;
+
+  @include below(md) {
+    background: #fff;
+  }
 }
 
 .banner__grid {
@@ -311,6 +335,7 @@
     gap: 20px;
   }
   @include below(md) {
+    gap: 0;
     justify-content: center;
     flex-direction: column;
   }
@@ -335,8 +360,8 @@
   @include below(md) {
     margin-right: -20px;
     margin-right: -20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
     width: calc(100% + 40px);
     height: auto;
@@ -370,6 +395,7 @@
   }
   @include below(md) {
     order: 3;
+    margin-top: 16px;
   }
 }
 
@@ -401,6 +427,8 @@
     text-align: center;
     width: 100%;
     order: 2;
+    margin-top: 12px;
+    line-height: 160%;
   }
 }
 
@@ -412,6 +440,7 @@
   
   @include below(md) {
     order: 4;
+    margin-top: 16px;
   }
 }
 
