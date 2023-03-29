@@ -250,11 +250,11 @@
     padding-right: 60px;
   }
   @include below(md) {
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -24px;
+    margin-right: -24px;
     border-left: none;
     border-right: none;
-    padding-right: 0;
+    padding-right: 20px;
   }
 }
 
@@ -305,6 +305,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  flex-wrap: wrap;
   
   @include below(lg) {
     gap: 20px;
@@ -326,6 +327,16 @@
   justify-content: center;
   padding: 12px 0 0;
   margin-left: -20px;
+
+  @include below(md) {
+    margin-right: -20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    br {
+      display: none;
+    }
+  }
 }
 
 .banner__desc {
@@ -335,6 +346,10 @@
   color: #4D4C4C;
   flex-shrink: 0;
   padding: 8px 0 0;
+
+  @include below(md) {
+    display: none;
+  }
 }
 
 .banner__logos {
@@ -369,6 +384,12 @@
   font-size: 32px;
   line-height: 120%;
   color: #000000;
+
+  @include below(md) {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .banner__title span {
