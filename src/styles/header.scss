@@ -330,9 +330,12 @@
 
   @include below(md) {
     margin-right: -20px;
+    margin-right: -20px;
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 14px;
+    width: calc(100% + 40px);
+    height: auto;
     br {
       display: none;
     }
