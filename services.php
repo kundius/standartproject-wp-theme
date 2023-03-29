@@ -15,8 +15,9 @@ $services = new WP_Query([
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
+    <?php get_template_part('partials/header'); ?>
+    
     <div class="wrapper">
-      <?php get_template_part('partials/header'); ?>
 
       <section class="services">
         <div class="container">
