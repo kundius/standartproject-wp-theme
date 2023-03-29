@@ -243,9 +243,18 @@
   border-top: 0;
   padding-right: 95px;
   position: relative;
+  padding-bottom: 30px;
+  padding-left: 20px;
   
   @include below(lg) {
     padding-right: 60px;
+  }
+  @include below(md) {
+    margin-left: -16px;
+    margin-right: -16px;
+    border-left: none;
+    border-right: none;
+    padding-right: 0;
   }
 }
 
@@ -291,11 +300,11 @@
   background: #000;
 }
 
-.banner__headline {
+.banner__grid {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 46px;
+  gap: 30px;
   
   @include below(lg) {
     gap: 20px;
@@ -316,6 +325,7 @@
   display: flex;
   justify-content: center;
   padding: 12px 0 0;
+  margin-left: -20px;
 }
 
 .banner__desc {
@@ -345,14 +355,14 @@
   display: block;
 }
 
-.banner__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+// .banner__body {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding-left: 20px;
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+// }
 
 .banner__title {
   font-family: "OpenGost Type B TT";

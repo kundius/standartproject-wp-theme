@@ -2,7 +2,7 @@
   <div class="container">
     <div class="banner">
       <button type="button" name="button" class="banner__close"></button>
-      <div class="banner__headline">
+      <div class="banner__grid">
         <div class="banner__date">
           17 - 19<br />
           апреля 2023
@@ -20,8 +20,6 @@
             <img src="<?php bloginfo('template_url') ?>/dist/images/transrussia.png" alt="" width="180" height="31">
           </div>
         </div>
-      </div>
-      <div class="banner__body">
         <div class="banner__title">
           Будем рады встрече на выставке <span>TransRussia 2023!</span>
         </div>
