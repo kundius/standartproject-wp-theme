@@ -310,6 +310,9 @@
   @include below(lg) {
     gap: 20px;
   }
+  @include below(md) {
+    justify-content: center;
+  }
 }
 
 .banner__date {
@@ -408,9 +411,6 @@
   
   @include below(md) {
     order: 4;
-    display: flex;
-    width: 100%;
-    justify-content: center;
   }
 }
 
