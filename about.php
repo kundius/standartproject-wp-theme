@@ -567,6 +567,10 @@ $projects_msk = get_field('projects_msk');
             </div>
           </div>
         </div>
+        
+        <p>
+          <img src="/wp-content/uploads/2023/04/scn_20230427_164633_page-0001-scaled.jpg" />
+        </p>
 
         <div class="about__presscenter">
           <section class="section-presscenter">
