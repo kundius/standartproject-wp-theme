@@ -1,35 +1,28 @@
-<!--<section class="banner-section">
+<section class="banner-section">
   <div class="container">
     <div class="banner">
       <button type="button" name="button" class="banner__close"></button>
       <div class="banner__grid">
-        <div class="banner__date">
-          17 - 19<br />
-          апреля 2023
+        <div class="banner__b1">
+          <img src="<?php bloginfo('template_url') ?>/dist/images/b1.png" alt="" />
         </div>
-        <div class="banner__desc">
-          27-ая Международная выставка<br />
-          транспортно-логистических услуг,<br />
-          складского оборудования и технологий TransRussia.
-        </div>
-        <div class="banner__logos">
-          <div class="banner__logo">
-            <img src="<?php bloginfo('template_url') ?>/dist/images/skladtech.png" alt="" width="206" height="40">
+        <div class="banner__main">
+          <div class="banner__title">
+            Наша компания примет участие<br />
+            в выставке <strong>CeMAT Russia</strong>
           </div>
-          <div class="banner__logo">
-            <img src="<?php bloginfo('template_url') ?>/dist/images/transrussia.png" alt="" width="180" height="31">
-          </div>
+          <a href="#" class="banner__button">Получить билет на выставку</a>
         </div>
-        <div class="banner__title">
-          Будем рады встрече на выставке <span>TransRussia 2023!</span>
+        <div class="banner__b2">
+          <img src="<?php bloginfo('template_url') ?>/dist/images/b2.png" alt="" />
         </div>
-        <div class="banner__button">
-          <button class="button-primary" data-hystmodal="#bannerModal">ПОДРОБНЕЕ</button>
+        <div class="banner__b3">
+          <img src="<?php bloginfo('template_url') ?>/dist/images/b3.png" alt="" />
         </div>
       </div>
     </div>
   </div>
-</section>-->
+</section>
 
 <div class="hystmodal" id="bannerModal" aria-hidden="true">
   <div class="hystmodal__wrap">

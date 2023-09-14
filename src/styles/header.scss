@@ -239,23 +239,19 @@
 }
 
 .banner {
-  border: 3px solid #FF170A;
   border-top: 0;
-  padding-right: 95px;
+  padding-right: 60px;
   position: relative;
-  padding-bottom: 30px;
-  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   
   @include below(lg) {
-    padding-right: 60px;
   }
   @include below(md) {
     margin-left: -24px;
     margin-right: -24px;
     border-left: none;
     border-right: none;
-    padding-right: 20px;
-    padding-bottom: 16px;
   }
   @include below(sm) {
     margin-left: -16px;
@@ -332,7 +328,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 12px;
   flex-wrap: wrap;
   
   @include below(lg) {
@@ -345,107 +341,54 @@
   }
 }
 
-.banner__date {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  color: #fff;
-  background: #ff170a;
-  height: 99px;
-  width: 167px;
-  flex-shrink: 0;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 12px 0 0;
-  margin-left: -20px;
-
-  @include below(md) {
-    margin-right: -20px;
-    margin-right: -20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 14px;
-    width: calc(100% + 40px);
-    height: auto;
-    order: 1;
-    br {
-      display: none;
-    }
-  }
+.banner__main {
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-.banner__desc {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-  color: #4D4C4C;
-  flex-shrink: 0;
-  padding: 8px 0 0;
-
-  @include below(md) {
-    display: none;
-  }
-}
-
-.banner__logos {
-  display: flex;
-  gap: 46px;
-  align-items: center;
-  
-  @include below(lg) {
-    gap: 20px;
-  }
-  @include below(md) {
-    order: 3;
-    margin-top: 16px;
-  }
-}
-
-.banner__logo {
-
-}
-
-.banner__logo img {
-  display: block;
-}
-
-// .banner__body {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding-left: 20px;
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-// }
 
 .banner__title {
-  font-family: "OpenGost Type B TT";
-  font-size: 32px;
-  line-height: 120%;
-  color: #000000;
-
-  @include below(md) {
-    font-size: 24px;
-    text-align: center;
-    width: 100%;
-    order: 2;
-    margin-top: 12px;
-    line-height: 160%;
-  }
-}
-
-.banner__title span {
-  color: #FF170A;
+  color: #910f13;
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 
 .banner__button {
-  
-  @include below(md) {
-    order: 4;
-    margin-top: 16px;
-  }
+  color: #910f13;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  border: 2px solid #a81217;
+  background-color: #ffffff;
+  display: inline-flex;
+  padding: 0 30px;
+  line-height: 44px; 
+  text-decoration: none;
+}
+
+.banner__button::before {
+  content: '';
+  width: 36px;
+  height: 32px;
+  background: url('../images/ticket-ico.png') no-repeat 50% 50%;
+  background-size: cover;
+  margin-left: -16px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.banner__b1 img {
+  display: block;
+}
+
+.banner__b2 img {
+  display: block;
+}
+
+.banner__b3 img {
+  display: block;
 }
 
 .banner-modal {
