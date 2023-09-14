@@ -263,8 +263,8 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  right: 7px;
-  top: 25px;
+  right: -48px;
+  top: 12px;
   border: none;
   padding: 0;
   background: 0 0;
@@ -329,7 +329,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  flex-wrap: wrap;
   
   @include below(lg) {
     gap: 20px;
