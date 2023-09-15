@@ -239,8 +239,6 @@
 }
 
 .banner {
-  border-top: 0;
-  padding-right: 60px;
   position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -270,6 +268,9 @@
   background: 0 0;
   cursor: pointer;
 
+  @include below(lg) {
+    right: 0;
+  }
   @include below(md) {
     width: 40px;
     height: 40px;
@@ -288,6 +289,9 @@
   width: 24px;
   background: #4D4C4C;
 
+  @include below(lg) {
+    background: #ffffff;
+  }
   @include below(md) {
     background: #fff;
   }
@@ -303,6 +307,9 @@
   width: 24px;
   background: #4D4C4C;
 
+  @include below(lg) {
+    background: #ffffff;
+  }
   @include below(md) {
     background: #fff;
   }
@@ -326,8 +333,7 @@
 
 .banner__grid {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-c.banner__titleontent: space-between;
   gap: 12px;
   
   @include below(lg) {
@@ -343,6 +349,10 @@
 .banner__main {
   padding-left: 20px;
   padding-right: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .banner__title {
@@ -350,21 +360,32 @@
   font-size: 20px;
   letter-spacing: normal;
   line-height: 24px;
-  margin-bottom: 20px;
+
+  @include below(lg) {
+    font-size: 18px;
+    line-height: 1;
+  }
 }
 
 .banner__button {
   color: #910f13;
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.2px;
+  letter-spacing: -.2px;
   border: 2px solid #a81217;
-  background-color: #ffffff;
-  display: inline-flex;
-  padding: 0 30px;
-  line-height: 44px; 
+  background-color: #fff;
+  display: flex;
+  padding: 0 12px;
+  line-height: 48px;
   text-decoration: none;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  white-space: nowrap;
+
+  @include below(lg) {
+    font-size: 16px;
+  }
 }
 
 .banner__button::before {
@@ -373,7 +394,7 @@
   height: 32px;
   background: url('../images/ticket-ico.png') no-repeat 50% 50%;
   background-size: cover;
-  margin-left: -16px;
+  margin-left: -12px;
   margin-right: 12px;
   flex-shrink: 0;
 }

@@ -11,7 +11,7 @@
             Наша компания примет участие<br />
             в выставке <strong>CeMAT Russia</strong>
           </div>
-          <a href="#" class="banner__button">Получить билет на выставку</a>
+          <a href="https://www.cemat-russia.ru/visitors/get-ticket/" class="banner__button" target="_blank">Получить билет на выставку</a>
         </div>
         <div class="banner__b2">
           <img src="<?php bloginfo('template_url') ?>/dist/images/b2.png" alt="" />
