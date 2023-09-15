@@ -11,6 +11,9 @@
             Наша компания примет участие<br />
             в выставке <strong>CeMAT Russia</strong>
           </div>
+          <div class="banner__code">
+            Промокод: cr23ez50
+          </div>
           <a href="https://www.cemat-russia.ru/visitors/get-ticket/" class="banner__button" target="_blank">Получить билет на выставку</a>
         </div>
         <div class="banner__b2">

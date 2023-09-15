@@ -373,7 +373,7 @@
   font-size: 20px;
   letter-spacing: normal;
   line-height: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 
   @include below(lg) {
     font-size: 18px;
@@ -381,6 +381,22 @@
   }
   @include below(sm) {
     font-size: 16px;
+  }
+}
+
+.banner__code {
+  color: #910f13;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 24px;
+  margin-bottom: 6px;
+  line-height: 1;
+
+  @include below(lg) {
+    font-size: 14px;
+  }
+  @include below(sm) {
+    font-size: 12px;
   }
 }
 
