@@ -293,7 +293,7 @@
     background: #ffffff;
   }
   @include below(md) {
-    background: #fff;
+    background: #4D4C4C;
   }
 }
 
@@ -311,7 +311,7 @@
     background: #ffffff;
   }
   @include below(md) {
-    background: #fff;
+    background: #4D4C4C;
   }
 }
 
@@ -360,6 +360,7 @@
   font-size: 20px;
   letter-spacing: normal;
   line-height: 24px;
+  margin-bottom: 12px;
 
   @include below(lg) {
     font-size: 18px;
