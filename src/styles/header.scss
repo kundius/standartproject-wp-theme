@@ -379,6 +379,9 @@
     font-size: 18px;
     line-height: 1;
   }
+  @include below(sm) {
+    font-size: 16px;
+  }
 }
 
 .banner__button {
