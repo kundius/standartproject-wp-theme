@@ -1,4 +1,4 @@
-<section class="banner-section">
+<!--<section class="banner-section">
   <div class="container">
     <div class="banner">
       <button type="button" name="button" class="banner__close"></button>
@@ -26,6 +26,7 @@
     </div>
   </div>
 </section>
+-->
 
 <div class="hystmodal" id="bannerModal" aria-hidden="true">
   <div class="hystmodal__wrap">
