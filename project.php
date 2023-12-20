@@ -23,10 +23,9 @@ $see_also = new wp_query($args);
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
-    <?php get_template_part('partials/header'); ?>
-
     <div class="wrapper">
-
+      <?php get_template_part('partials/header'); ?>
+      
       <section class="project">
         <div class="container">
           <h1 class="project__title"><?php the_title() ?></h1>

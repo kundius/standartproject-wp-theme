@@ -19,9 +19,8 @@ $see_also = new wp_query($args);
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
-    <?php get_template_part('partials/header'); ?>
-
     <div class="wrapper">
+      <?php get_template_part('partials/header'); ?>
 
       <section class="article">
         <div class="container">

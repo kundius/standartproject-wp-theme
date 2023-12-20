@@ -9,9 +9,8 @@ Template Name: Контакты
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
-    <?php get_template_part('partials/header'); ?>
-
     <div class="wrapper">
+      <?php get_template_part('partials/header'); ?>
 
       <section class="contacts">
         <div class="container">

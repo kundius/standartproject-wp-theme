@@ -31,7 +31,7 @@
   //   flex-direction: row;
   //   flex-wrap: wrap;
   // }
-  ._opened & {
+  .header._opened & {
     padding-top: 160px;
   }
 }

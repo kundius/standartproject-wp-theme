@@ -19,9 +19,8 @@ $nextID = !empty($pages[$current+1]) ? $pages[$current+1] : null;
     <?php get_template_part('partials/head'); ?>
   </head>
   <body>
-    <?php get_template_part('partials/header'); ?>
-    
     <div class="wrapper">
+      <?php get_template_part('partials/header'); ?>
 
       <section class="service">
         <div class="container">
