@@ -2,16 +2,21 @@
 
 .header {
   @include below(sm) {
-    position: sticky;
+    position: fixed;
     top: 0;
     background: #fff;
     z-index: 80;
     transition: all .3s ease;
     height: 64px;
-    overflow: auto;
     &._opened {
       height: 100vh;
     }
+  }
+}
+
+.wrapper {
+  @include below(sm) {
+    padding-top: 64px;
   }
 }
 
