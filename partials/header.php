@@ -289,6 +289,12 @@
 
 <section class="header">
   <div class="container header__container">
+    <?php if (is_new_year()): ?>
+    <div class="header_new_year_left_top_2"></div>
+    <div class="header_new_year_right_top_2"></div>
+    <div class="header_new_year_middle_top_1"></div>
+    <?php endif; ?>
+    
     <a href="/" class="header__logo">
       <img src="<?php bloginfo('template_url') ?>/dist/images/logo.svg" alt="" />
     </a>

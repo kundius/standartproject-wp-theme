@@ -598,3 +598,42 @@
 .banner-modal__code p + p {
   margin-top: 20px;
 }
+
+.header_new_year_left_top_2 {
+  background: url("../img/ng-left-top-1-red.png") no-repeat 50% 50%;
+  width: 428px;
+  height: 518px;
+  position: absolute;
+  top: -10px;
+  left: -250px;
+  pointer-events: none;
+  z-index: -1;
+  @media (max-width: 479px) {
+    left: -320px;
+  }
+}
+
+.header_new_year_right_top_2 {
+  background: url("../img/ng-right-top-1.png") no-repeat;
+  width: 398px;
+  height: 126px;
+  position: absolute;
+  top: -10px;
+  right: -130px;
+  pointer-events: none;
+  z-index: -1;
+  @media (max-width: 479px) {
+    right: -280px;
+  }
+}
+
+.header_new_year_middle_top_1 {
+  background: url("../img/ng-middle-top-1.png") no-repeat;
+  height: 42px;
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  top: -10px;
+  width: 133px;
+  transform: translateX(-50%);
+}

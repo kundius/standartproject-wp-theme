@@ -32,3 +32,14 @@ add_action(
         \DomenART\Theme\Framework::get_container()->boot_services();
     }
 );
+
+function is_new_year()
+{
+  if (date('m') === '12' && date('d') >= '20') {
+    return true;
+  }
+  if (date('m') === '01' && date('d') <= '10') {
+    return true;
+  }
+  return false;
+}
