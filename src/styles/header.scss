@@ -25,6 +25,7 @@
 .header__container {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   // @include below(sm) {
   //   flex-direction: row;
@@ -600,7 +601,7 @@
 }
 
 .header_new_year_left_top_2 {
-  background: url("../img/ng-left-top-1-red.png") no-repeat 50% 50%;
+  background: url("../images/ng-left-top-1-red.png") no-repeat 50% 50%;
   width: 428px;
   height: 518px;
   position: absolute;
@@ -614,7 +615,7 @@
 }
 
 .header_new_year_right_top_2 {
-  background: url("../img/ng-right-top-1.png") no-repeat;
+  background: url("../images/ng-right-top-1.png") no-repeat;
   width: 398px;
   height: 126px;
   position: absolute;
@@ -628,7 +629,7 @@
 }
 
 .header_new_year_middle_top_1 {
-  background: url("../img/ng-middle-top-1.png") no-repeat;
+  background: url("../images/ng-middle-top-1.png") no-repeat;
   height: 42px;
   position: absolute;
   pointer-events: none;
