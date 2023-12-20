@@ -22,15 +22,19 @@
 // }
 
 .header__container {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  transition: all .3s ease;
 
   // @include below(sm) {
   //   flex-direction: row;
   //   flex-wrap: wrap;
   // }
+}
+
+.header__wrapper {
+  transition: all .3s ease;
+  display: flex;
+  flex-direction: column;
+
   .header._opened & {
     padding-top: 160px;
   }
