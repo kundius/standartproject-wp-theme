@@ -4,6 +4,7 @@
   @include below(sm) {
     position: fixed;
     top: 0;
+    width: 100%;
     background: #fff;
     z-index: 80;
     transition: all .3s ease;
