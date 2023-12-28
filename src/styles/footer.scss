@@ -217,6 +217,47 @@
   text-decoration: none;
 }
 
+.footer-contacts__social {
+  margin-top: 34px;
+
+  @include below(sm) {
+		margin-top: 32px;
+  }
+}
+
+.footer-contacts__social-label {
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 14px;
+
+  @include below(sm) {
+		margin-bottom: 8px;
+		line-height: 120%;
+  }
+}
+
+.social-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.social-list__item {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff170a;
+}
+
+.social-list__item svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
 .footer-secondary {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding-top: 48px;

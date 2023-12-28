@@ -42,6 +42,20 @@
                 <a href="mailto:<?php the_field('email', 'options') ?>"><?php the_field('email', 'options') ?></a>
               </div>
             </div>
+            <?php if ($social = get_field('social', 'options')): ?>
+            <div class="footer-contacts__social">
+              <div class="footer-contacts__social-label">
+              Социальные сети:
+              </div>
+              <div class="footer-contacts__social-value">
+                <div class="social-list">
+                  <?php foreach ($social as $item): ?>
+                  <a href="<?php echo $item['link'] ?>" class="social-list__item"><?php echo $item['icon'] ?></a>
+                  <?php endforeach ?>
+                </div>
+              </div>
+            </div>
+            <?php endif ?>
           </div>
         </div>
       </div>
