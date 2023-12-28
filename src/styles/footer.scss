@@ -185,6 +185,7 @@
 
   @include below(sm) {
 		margin-top: 32px;
+    text-align: center;
   }
 }
 
@@ -234,6 +235,14 @@
   @include below(sm) {
 		margin-bottom: 8px;
 		line-height: 120%;
+  }
+}
+
+.footer-contacts__social-value {
+  display: flex;
+
+  @include below(sm) {
+    justify-content: center;
   }
 }
 
