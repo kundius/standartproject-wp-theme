@@ -50,7 +50,7 @@
               <div class="footer-contacts__social-value">
                 <div class="social-list">
                   <?php foreach ($social as $item): ?>
-                  <a href="<?php echo $item['link'] ?>" class="social-list__item"><?php echo $item['icon'] ?></a>
+                  <a href="<?php echo $item['link'] ?>" class="social-list__item" target="_blank"><?php echo $item['icon'] ?></a>
                   <?php endforeach ?>
                 </div>
               </div>
