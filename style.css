@@ -5,10 +5,3 @@ Author URI: http://domenart-studio.ru/
 */
 
 @import 'dist/main.css';
-
-.header_ng::before {
-  content: '';
-  pointer-events: none;
-  width: 100%;
-  height: 500px;
-}
