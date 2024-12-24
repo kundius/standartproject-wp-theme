@@ -287,7 +287,7 @@
   </div>
 </div>
 
-<section class="header">
+<section class="header <?php if (is_new_year()): ?>header_ng<?php endif; ?>">
   <div class="container header__container">
     <div class="header__wrapper">
       <?php if (is_new_year()): ?>
